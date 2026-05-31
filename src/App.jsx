@@ -62,8 +62,8 @@ const BRACKET_CONFIGS = {
 // CONFERENCE DEFINITIONS
 // =============================================================================
 const CONFERENCES = [
-  { id: '2',  name: 'ACC',      config: 'ACC',       dateRange: '20260310-20260314' },
-  { id: '4',  name: 'Big East', config: 'BIG_EAST',  dateRange: '20260311-20260314' },
+  { id: '2',  name: 'ACC',      config: 'ACC',       dateRange: '20260310-20260314' }, 
+  { id: '4',  name: 'Big East', config: 'BIG_EAST',  dateRange: '20260311-20260314' }, 
   { id: '7',  name: 'Big Ten',  config: 'BIG_TEN',   dateRange: '20260310-20260315' },
   { id: '8',  name: 'Big 12',   config: 'SEC_BIG12', dateRange: '20260310-20260314' },
   { id: '3',  name: 'A10',      config: 'A10',       dateRange: '20260311-20260315' },
@@ -82,26 +82,20 @@ const buildBracketRounds = (games, conferenceId) => {
   const config = BRACKET_CONFIGS[conf.config];
   if (!config) return [];
 
-  // 1. Sort all games purely chronologically to ignore UTC date boundaries
   const sortedGames = [...games].sort((a, b) => new Date(a.date) - new Date(b.date));
   
   let gamePointer = 0;
 
-  // 2. Mathematically slice the chronological games into the config rounds
   return config.rounds.map((roundConfig) => {
     const { name: roundName, slots, ghosts } = roundConfig;
-    
-    // Determine how many real games this round expects
     const expectedGames = slots - ghosts.length;
     
-    // Grab exactly that many sequential games from our sorted list
     const gamesForRound = sortedGames.slice(gamePointer, gamePointer + expectedGames);
     gamePointer += expectedGames;
 
     const displaySlots = [];
     let roundGamePointer = 0;
 
-    // 3. Inject the real games and the ghosts in the exact configured order
     for (let i = 0; i < slots; i++) {
       if (ghosts.includes(i)) {
         displaySlots.push({
@@ -115,7 +109,8 @@ const buildBracketRounds = (games, conferenceId) => {
             ? {
                 id: rawGame.id,
                 status: rawGame.status,
-                network: rawGame.network, // <-- ADD THIS LINE
+                network: rawGame.network,
+                isLive: rawGame.is_live, // <-- Grab the live boolean from Python
                 topTeam: rawGame.teams[0] || { name: 'TBD', seed: '-', score: '0', winner: false },
                 bottomTeam: rawGame.teams[1] || { name: 'TBD', seed: '-', score: '0', winner: false },
               }
@@ -140,26 +135,20 @@ const TeamRow = ({ team, isGhost }) => {
     return <div className="px-4 py-3 h-10 md:h-12 w-full" />;
   }
 
-  // Detect if ESPN hasn't populated this team yet
   const isTBD = team.name === 'TBD' || team.name === 'Unknown';
 
   return (
-    <div className={`flex justify-between items-center px-4 py-3 h-10 md:h-12 ${
+    <div className={`flex justify-between items-center px-4 py-3 h-10 md:h-12 transition-colors ${
       team.winner ? 'bg-blue-50 font-bold text-slate-900' : 'bg-white text-slate-600'
     }`}>
       <div className="flex items-center space-x-3 overflow-hidden">
-        {/* Hide the seed if the team is TBD */}
         <span className="text-xs text-slate-400 w-4 text-right shrink-0">
           {!isTBD && team.seed !== '-' ? team.seed : ''}
         </span>
-        
-        {/* Italicize and fade the text if it is a placeholder */}
         <span className={`text-sm md:text-base truncate ${isTBD ? 'italic text-slate-400 font-normal' : ''}`}>
           {team.name}
         </span>
       </div>
-      
-      {/* Hide the score placeholder if the game hasn't been set */}
       <span className="text-sm md:text-base font-medium ml-2 shrink-0">
         {!isTBD && team.score !== '0' ? team.score : ''}
       </span>
@@ -185,11 +174,21 @@ const Matchup = ({ game }) => {
     <div className="relative flex items-center w-full my-2">
       <div className="bg-white border border-slate-200 rounded-lg shadow-sm overflow-hidden flex flex-col w-full shrink-0 relative z-10">
         
-        {/* --- UPDATED HEADER BOX --- */}
+        {/* --- LIVE HEADER BOX --- */}
         <div className="bg-slate-50 px-3 py-1 text-[10px] uppercase tracking-wider font-bold border-b border-slate-200 h-6 flex items-center justify-between">
-          <span className="text-slate-500">{game.status}</span>
-          
-          {/* Render the network if ESPN provided one! */}
+          <div className="flex items-center space-x-2">
+            {/* The Pulsing Red Dot for Live Games */}
+            {game.isLive && (
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+              </span>
+            )}
+            <span className={game.isLive ? 'text-red-600' : 'text-slate-500'}>
+              {game.status}
+            </span>
+          </div>
+
           {game.network && (
             <span className="text-blue-600 truncate max-w-[80px] text-right">
               {game.network}
@@ -218,29 +217,21 @@ const TournamentBracket = ({ roundsData }) => {
 
   return (
     <div className="flex-1 overflow-x-auto no-scrollbar snap-x snap-mandatory flex py-8 px-4 space-x-8">
-      {roundsData.map((round, roundIndex) => {
-        // Pass isLastRound down so the final column stops drawing stems
-        const isLastRound = roundIndex === roundsData.length - 1;
-        
-        return (
-          <div key={roundIndex} className="flex-none w-[85vw] md:w-72 snap-center flex flex-col relative">
-            <div className="mb-6 text-center shrink-0">
-              <h2 className="text-sm font-black text-slate-800 uppercase tracking-widest bg-slate-200 py-2 rounded-md">
-                {round.roundName}
-              </h2>
-            </div>
-
-            <div className="flex-1 flex flex-col justify-around relative">
-              {round.slots.map((game) => (
-                <Matchup 
-                  key={game.id} 
-                  game={game} 
-                />
-              ))}
-            </div>
+      {roundsData.map((round, roundIndex) => (
+        <div key={roundIndex} className="flex-none w-[85vw] md:w-72 snap-center flex flex-col relative">
+          <div className="mb-6 text-center shrink-0">
+            <h2 className="text-sm font-black text-slate-800 uppercase tracking-widest bg-slate-200 py-2 rounded-md">
+              {round.roundName}
+            </h2>
           </div>
-        );
-      })}
+
+          <div className="flex-1 flex flex-col justify-around relative">
+            {round.slots.map((game) => (
+              <Matchup key={game.id} game={game} />
+            ))}
+          </div>
+        </div>
+      ))}
       <div className="flex-none w-8" />
     </div>
   );
@@ -256,9 +247,14 @@ export default function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchTournamentData = async () => {
-      setLoading(true);
-      setError(null);
+    // --- THE SILENT POLLING LOGIC ---
+    const fetchTournamentData = async (isBackground = false) => {
+      // Only show the loading spinner if this is an active tab click
+      if (!isBackground) {
+        setLoading(true);
+        setError(null);
+      }
+      
       try {
         const response = await fetch(
           `http://localhost:8000/api/bracket/${activeTab.id}?date=${activeTab.dateRange}`
@@ -270,14 +266,28 @@ export default function App() {
         setBracketData(rounds);
       } catch (err) {
         console.error('Error fetching from Python API:', err);
-        setError('Could not load tournament data. Is the API server running?');
-        setBracketData([]);
+        // Only show the fatal error state if it wasn't a background ping
+        if (!isBackground) {
+          setError('Could not load tournament data. Is the API server running?');
+          setBracketData([]);
+        }
       } finally {
-        setLoading(false);
+        if (!isBackground) {
+          setLoading(false);
+        }
       }
     };
 
-    fetchTournamentData();
+    // 1. Initial fetch on tab change
+    fetchTournamentData(false);
+
+    // 2. Set up the polling interval (every 30 seconds)
+    const intervalId = setInterval(() => {
+      fetchTournamentData(true);
+    }, 30000);
+
+    // 3. Cleanup on unmount or tab change
+    return () => clearInterval(intervalId);
   }, [activeTab]);
 
   return (
