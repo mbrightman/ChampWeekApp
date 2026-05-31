@@ -5,14 +5,16 @@ import re
 import os
 
 # --- CONFIGURATION ---
-YEAR = "2025"
+YEAR = "2026"
 
 # Dictionary mapping our App's conference names to Wikipedia's URL formatting
 CONFERENCES = {
     "ACC": "ACC",
     "Big East": "Big_East",
     "Big Ten": "Big_Ten",
-    "SEC": "SEC"
+    "SEC": "SEC",
+    "Big 12": "Big_12",
+    "A10": "Atlantic_10"
 }
 
 def generate_seeds():
@@ -64,7 +66,8 @@ def generate_seeds():
                 
                 # Clean the Team Name (remove Wikipedia citations like "[a]")
                 team_name = cols[1].text.strip()
-                team_name = re.sub(r'\[.*?\]', '', team_name).strip()
+                team_name = re.sub(r'\[.*?\]', '', team_name) # Removes [a]
+                team_name = re.sub(r'[^\w\s\-\(\)]', '', team_name).strip() # Removes ‡, †, #
                 
                 if seed_match and team_name:
                     conf_seeds[team_name] = seed_match.group()
