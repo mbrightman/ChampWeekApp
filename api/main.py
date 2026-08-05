@@ -29,7 +29,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://champ-week-app.vercel.app/" # <-- Add your Vercel URL here!
+        "https://champ-week-app.vercel.app" # <-- Add your Vercel URL here!
     ],
     allow_credentials=True,
     allow_methods=["*"],
