@@ -221,18 +221,25 @@ async def get_bracket_data(group_id: str, date: str):
             teams = []
 
             for team in competitors:
-                short_name = team.get("team", {}).get("shortDisplayName", "TBD")
-                display_name = team.get("team", {}).get("displayName", short_name)
+                team_data = team.get("team", {})
+                team_id = str(team_data.get("id", ""))
+                short_name = team_data.get("shortDisplayName", "TBD")
+                display_name = team_data.get("displayName", short_name)
 
                 true_seed = get_true_seed(short_name, conf_seeds)
                 if true_seed == "-":
                     true_seed = get_true_seed(display_name, conf_seeds)
 
+                # --- NEW: Construct the high-res ESPN logo URL ---
+                logo_url = f"https://a.espncdn.com/i/teamlogos/ncaa/500/{team_id}.png" if team_id else ""
+
                 teams.append({
+                    "id": team_id,
                     "name": short_name, 
                     "seed": true_seed,
                     "score": team.get("score", "0"),
                     "winner": team.get("winner", False),
+                    "logo": logo_url, # <-- NEW
                 })
 
             clean_games.append({

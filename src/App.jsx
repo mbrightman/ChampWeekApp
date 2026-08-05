@@ -333,8 +333,8 @@ const buildBracketRounds = (games, conferenceId) => {
                 status: rawGame.status,
                 network: rawGame.network,
                 isLive: rawGame.is_live,
-                topTeam: rawGame.teams[0] || { name: 'TBD', seed: '-', score: '0', winner: false },
-                bottomTeam: rawGame.teams[1] || { name: 'TBD', seed: '-', score: '0', winner: false },
+                topTeam: rawGame.teams[0] || { name: 'TBD', seed: '-', score: '0', winner: false, logo: '' },
+                bottomTeam: rawGame.teams[1] || { name: 'TBD', seed: '-', score: '0', winner: false, logo: '' },
               }
             : {
                 isGhost: true,
@@ -458,16 +458,28 @@ const ChampionCard = ({ team }) => {
           </h3>
         </div>
         
-        {/* Team Details */}
-        <div className="p-6 md:p-8 flex flex-col items-center justify-center space-y-2 text-center">
-          <span className="text-2xl md:text-3xl font-black text-white tracking-tight">
-            {team.name}
-          </span>
-          {team.seed !== '-' && (
-            <span className="text-slate-400 font-bold text-sm uppercase tracking-wider">
-              {team.seed} Seed
-            </span>
+        {/* Team Details with Logo */}
+        <div className="p-6 md:p-8 flex flex-col items-center justify-center space-y-4 text-center">
+          
+          {/* NEW: High-Res Logo with subtle glow */}
+          {team.logo && (
+            <img 
+              src={team.logo} 
+              alt={`${team.name} logo`} 
+              className="w-24 h-24 md:w-28 md:h-28 object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.15)]"
+            />
           )}
+
+          <div className="flex flex-col space-y-1">
+            <span className="text-2xl md:text-3xl font-black text-white tracking-tight">
+              {team.name}
+            </span>
+            {team.seed !== '-' && (
+              <span className="text-slate-400 font-bold text-sm uppercase tracking-wider">
+                {team.seed} Seed
+              </span>
+            )}
+          </div>
         </div>
         
       </div>
@@ -479,7 +491,6 @@ const TournamentBracket = ({ roundsData }) => {
   if (roundsData.length === 0) {
     return (
       <div className="flex-1 flex items-center justify-center">
-        {/* Dark empty state box */}
         <p className="text-slate-400 font-medium bg-slate-800 px-6 py-4 rounded-lg border border-slate-700 shadow-sm">
           No games scheduled for this conference.
         </p>
@@ -487,12 +498,22 @@ const TournamentBracket = ({ roundsData }) => {
     );
   }
 
+  // --- CHAMPION DETECTOR ---
+  // Grab the very last round (Championship) and find the non-ghost game
+  const finalRound = roundsData[roundsData.length - 1];
+  const championshipGame = finalRound?.slots.find(slot => !slot.isGhost);
+  
+  let champion = null;
+  if (championshipGame) {
+    if (championshipGame.topTeam?.winner) champion = championshipGame.topTeam;
+    if (championshipGame.bottomTeam?.winner) champion = championshipGame.bottomTeam;
+  }
+
   return (
     <div className="flex-1 overflow-x-auto no-scrollbar snap-x snap-mandatory flex py-8 px-4 space-x-8">
       {roundsData.map((round, roundIndex) => (
         <div key={roundIndex} className="flex-none w-[85vw] md:w-72 snap-center flex flex-col relative">
           <div className="mb-6 text-center shrink-0">
-            {/* Darkened round headers */}
             <h2 className="text-sm font-black text-slate-300 uppercase tracking-widest bg-slate-800 border border-slate-700 py-2 rounded-md">
               {round.roundName}
             </h2>
@@ -505,6 +526,10 @@ const TournamentBracket = ({ roundsData }) => {
           </div>
         </div>
       ))}
+      
+      {/* --- RENDER THE CHAMPION IF THEY EXIST --- */}
+      {champion && <ChampionCard team={champion} />}
+      
       <div className="flex-none w-8" />
     </div>
   );
