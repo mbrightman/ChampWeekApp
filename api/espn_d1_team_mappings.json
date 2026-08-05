@@ -1,0 +1,2192 @@
+{
+    "2066": {
+        "team_name": "Binghamton Bearcats",
+        "team_id": "2066",
+        "conference_id": "1",
+        "conference_name": "America East Conference"
+    },
+    "160": {
+        "team_name": "New Hampshire Wildcats",
+        "team_id": "160",
+        "conference_id": "1",
+        "conference_name": "America East Conference"
+    },
+    "2803": {
+        "team_name": "Bryant Bulldogs",
+        "team_id": "2803",
+        "conference_id": "1",
+        "conference_name": "America East Conference"
+    },
+    "311": {
+        "team_name": "Maine Black Bears",
+        "team_id": "311",
+        "conference_id": "1",
+        "conference_name": "America East Conference"
+    },
+    "399": {
+        "team_name": "UAlbany Great Danes",
+        "team_id": "399",
+        "conference_id": "1",
+        "conference_name": "America East Conference"
+    },
+    "2349": {
+        "team_name": "UMass Lowell River Hawks",
+        "team_id": "2349",
+        "conference_id": "1",
+        "conference_name": "America East Conference"
+    },
+    "2885": {
+        "team_name": "NJIT Highlanders",
+        "team_id": "2885",
+        "conference_id": "1",
+        "conference_name": "America East Conference"
+    },
+    "261": {
+        "team_name": "Vermont Catamounts",
+        "team_id": "261",
+        "conference_id": "1",
+        "conference_name": "America East Conference"
+    },
+    "2378": {
+        "team_name": "UMBC Retrievers",
+        "team_id": "2378",
+        "conference_id": "1",
+        "conference_name": "America East Conference"
+    },
+    "2636": {
+        "team_name": "UTSA Roadrunners",
+        "team_id": "2636",
+        "conference_id": "62",
+        "conference_name": "American Conference"
+    },
+    "151": {
+        "team_name": "East Carolina Pirates",
+        "team_id": "151",
+        "conference_id": "62",
+        "conference_name": "American Conference"
+    },
+    "242": {
+        "team_name": "Rice Owls",
+        "team_id": "242",
+        "conference_id": "62",
+        "conference_name": "American Conference"
+    },
+    "2655": {
+        "team_name": "Tulane Green Wave",
+        "team_id": "2655",
+        "conference_id": "62",
+        "conference_name": "American Conference"
+    },
+    "218": {
+        "team_name": "Temple Owls",
+        "team_id": "218",
+        "conference_id": "62",
+        "conference_name": "American Conference"
+    },
+    "235": {
+        "team_name": "Memphis Tigers",
+        "team_id": "235",
+        "conference_id": "62",
+        "conference_name": "American Conference"
+    },
+    "249": {
+        "team_name": "North Texas Mean Green",
+        "team_id": "249",
+        "conference_id": "62",
+        "conference_name": "American Conference"
+    },
+    "2226": {
+        "team_name": "Florida Atlantic Owls",
+        "team_id": "2226",
+        "conference_id": "62",
+        "conference_name": "American Conference"
+    },
+    "2429": {
+        "team_name": "Charlotte 49ers",
+        "team_id": "2429",
+        "conference_id": "62",
+        "conference_name": "American Conference"
+    },
+    "5": {
+        "team_name": "UAB Blazers",
+        "team_id": "5",
+        "conference_id": "62",
+        "conference_name": "American Conference"
+    },
+    "202": {
+        "team_name": "Tulsa Golden Hurricane",
+        "team_id": "202",
+        "conference_id": "62",
+        "conference_name": "American Conference"
+    },
+    "2724": {
+        "team_name": "Wichita State Shockers",
+        "team_id": "2724",
+        "conference_id": "62",
+        "conference_name": "American Conference"
+    },
+    "58": {
+        "team_name": "South Florida Bulls",
+        "team_id": "58",
+        "conference_id": "62",
+        "conference_name": "American Conference"
+    },
+    "179": {
+        "team_name": "St. Bonaventure Bonnies",
+        "team_id": "179",
+        "conference_id": "3",
+        "conference_name": "Atlantic 10 Conference"
+    },
+    "2350": {
+        "team_name": "Loyola Chicago Ramblers",
+        "team_id": "2350",
+        "conference_id": "3",
+        "conference_name": "Atlantic 10 Conference"
+    },
+    "257": {
+        "team_name": "Richmond Spiders",
+        "team_id": "257",
+        "conference_id": "3",
+        "conference_name": "Atlantic 10 Conference"
+    },
+    "2325": {
+        "team_name": "La Salle Explorers",
+        "team_id": "2325",
+        "conference_id": "3",
+        "conference_name": "Atlantic 10 Conference"
+    },
+    "227": {
+        "team_name": "Rhode Island Rams",
+        "team_id": "227",
+        "conference_id": "3",
+        "conference_name": "Atlantic 10 Conference"
+    },
+    "45": {
+        "team_name": "George Washington Revolutionaries",
+        "team_id": "45",
+        "conference_id": "3",
+        "conference_name": "Atlantic 10 Conference"
+    },
+    "2230": {
+        "team_name": "Fordham Rams",
+        "team_id": "2230",
+        "conference_id": "3",
+        "conference_name": "Atlantic 10 Conference"
+    },
+    "2184": {
+        "team_name": "Duquesne Dukes",
+        "team_id": "2184",
+        "conference_id": "3",
+        "conference_name": "Atlantic 10 Conference"
+    },
+    "2166": {
+        "team_name": "Davidson Wildcats",
+        "team_id": "2166",
+        "conference_id": "3",
+        "conference_name": "Atlantic 10 Conference"
+    },
+    "2244": {
+        "team_name": "George Mason Patriots",
+        "team_id": "2244",
+        "conference_id": "3",
+        "conference_name": "Atlantic 10 Conference"
+    },
+    "2168": {
+        "team_name": "Dayton Flyers",
+        "team_id": "2168",
+        "conference_id": "3",
+        "conference_name": "Atlantic 10 Conference"
+    },
+    "2603": {
+        "team_name": "Saint Joseph's Hawks",
+        "team_id": "2603",
+        "conference_id": "3",
+        "conference_name": "Atlantic 10 Conference"
+    },
+    "139": {
+        "team_name": "Saint Louis Billikens",
+        "team_id": "139",
+        "conference_id": "3",
+        "conference_name": "Atlantic 10 Conference"
+    },
+    "2670": {
+        "team_name": "VCU Rams",
+        "team_id": "2670",
+        "conference_id": "3",
+        "conference_name": "Atlantic 10 Conference"
+    },
+    "59": {
+        "team_name": "Georgia Tech Yellow Jackets",
+        "team_id": "59",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "87": {
+        "team_name": "Notre Dame Fighting Irish",
+        "team_id": "87",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "103": {
+        "team_name": "Boston College Eagles",
+        "team_id": "103",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "221": {
+        "team_name": "Pittsburgh Panthers",
+        "team_id": "221",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "183": {
+        "team_name": "Syracuse Orange",
+        "team_id": "183",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "154": {
+        "team_name": "Wake Forest Demon Deacons",
+        "team_id": "154",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "259": {
+        "team_name": "Virginia Tech Hokies",
+        "team_id": "259",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "2567": {
+        "team_name": "SMU Mustangs",
+        "team_id": "2567",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "25": {
+        "team_name": "California Golden Bears",
+        "team_id": "25",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "24": {
+        "team_name": "Stanford Cardinal",
+        "team_id": "24",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "152": {
+        "team_name": "NC State Wolfpack",
+        "team_id": "152",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "52": {
+        "team_name": "Florida State Seminoles",
+        "team_id": "52",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "97": {
+        "team_name": "Louisville Cardinals",
+        "team_id": "97",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "153": {
+        "team_name": "North Carolina Tar Heels",
+        "team_id": "153",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "228": {
+        "team_name": "Clemson Tigers",
+        "team_id": "228",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "2390": {
+        "team_name": "Miami Hurricanes",
+        "team_id": "2390",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "258": {
+        "team_name": "Virginia Cavaliers",
+        "team_id": "258",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "150": {
+        "team_name": "Duke Blue Devils",
+        "team_id": "150",
+        "conference_id": "2",
+        "conference_name": "Atlantic Coast Conference"
+    },
+    "2453": {
+        "team_name": "North Alabama Lions",
+        "team_id": "2453",
+        "conference_id": "46",
+        "conference_name": "Atlantic Sun Conference"
+    },
+    "2454": {
+        "team_name": "North Florida Ospreys",
+        "team_id": "2454",
+        "conference_id": "46",
+        "conference_name": "Atlantic Sun Conference"
+    },
+    "91": {
+        "team_name": "Bellarmine Knights",
+        "team_id": "91",
+        "conference_id": "46",
+        "conference_name": "Atlantic Sun Conference"
+    },
+    "294": {
+        "team_name": "Jacksonville Dolphins",
+        "team_id": "294",
+        "conference_id": "46",
+        "conference_name": "Atlantic Sun Conference"
+    },
+    "56": {
+        "team_name": "Stetson Hatters",
+        "team_id": "56",
+        "conference_id": "46",
+        "conference_name": "Atlantic Sun Conference"
+    },
+    "2198": {
+        "team_name": "Eastern Kentucky Colonels",
+        "team_id": "2198",
+        "conference_id": "46",
+        "conference_name": "Atlantic Sun Conference"
+    },
+    "526": {
+        "team_name": "Florida Gulf Coast Eagles",
+        "team_id": "526",
+        "conference_id": "46",
+        "conference_name": "Atlantic Sun Conference"
+    },
+    "2698": {
+        "team_name": "West Georgia Wolves",
+        "team_id": "2698",
+        "conference_id": "46",
+        "conference_name": "Atlantic Sun Conference"
+    },
+    "288": {
+        "team_name": "Lipscomb Bisons",
+        "team_id": "288",
+        "conference_id": "46",
+        "conference_name": "Atlantic Sun Conference"
+    },
+    "2511": {
+        "team_name": "Queens University Royals",
+        "team_id": "2511",
+        "conference_id": "46",
+        "conference_name": "Atlantic Sun Conference"
+    },
+    "2046": {
+        "team_name": "Austin Peay Governors",
+        "team_id": "2046",
+        "conference_id": "46",
+        "conference_name": "Atlantic Sun Conference"
+    },
+    "2110": {
+        "team_name": "Central Arkansas Bears",
+        "team_id": "2110",
+        "conference_id": "46",
+        "conference_name": "Atlantic Sun Conference"
+    },
+    "254": {
+        "team_name": "Utah Utes",
+        "team_id": "254",
+        "conference_id": "8",
+        "conference_name": "Big 12 Conference"
+    },
+    "2306": {
+        "team_name": "Kansas State Wildcats",
+        "team_id": "2306",
+        "conference_id": "8",
+        "conference_name": "Big 12 Conference"
+    },
+    "197": {
+        "team_name": "Oklahoma State Cowboys",
+        "team_id": "197",
+        "conference_id": "8",
+        "conference_name": "Big 12 Conference"
+    },
+    "239": {
+        "team_name": "Baylor Bears",
+        "team_id": "239",
+        "conference_id": "8",
+        "conference_name": "Big 12 Conference"
+    },
+    "38": {
+        "team_name": "Colorado Buffaloes",
+        "team_id": "38",
+        "conference_id": "8",
+        "conference_name": "Big 12 Conference"
+    },
+    "9": {
+        "team_name": "Arizona State Sun Devils",
+        "team_id": "9",
+        "conference_id": "8",
+        "conference_name": "Big 12 Conference"
+    },
+    "252": {
+        "team_name": "BYU Cougars",
+        "team_id": "252",
+        "conference_id": "8",
+        "conference_name": "Big 12 Conference"
+    },
+    "2116": {
+        "team_name": "UCF Knights",
+        "team_id": "2116",
+        "conference_id": "8",
+        "conference_name": "Big 12 Conference"
+    },
+    "277": {
+        "team_name": "West Virginia Mountaineers",
+        "team_id": "277",
+        "conference_id": "8",
+        "conference_name": "Big 12 Conference"
+    },
+    "2132": {
+        "team_name": "Cincinnati Bearcats",
+        "team_id": "2132",
+        "conference_id": "8",
+        "conference_name": "Big 12 Conference"
+    },
+    "2628": {
+        "team_name": "TCU Horned Frogs",
+        "team_id": "2628",
+        "conference_id": "8",
+        "conference_name": "Big 12 Conference"
+    },
+    "66": {
+        "team_name": "Iowa State Cyclones",
+        "team_id": "66",
+        "conference_id": "8",
+        "conference_name": "Big 12 Conference"
+    },
+    "2305": {
+        "team_name": "Kansas Jayhawks",
+        "team_id": "2305",
+        "conference_id": "8",
+        "conference_name": "Big 12 Conference"
+    },
+    "2641": {
+        "team_name": "Texas Tech Red Raiders",
+        "team_id": "2641",
+        "conference_id": "8",
+        "conference_name": "Big 12 Conference"
+    },
+    "248": {
+        "team_name": "Houston Cougars",
+        "team_id": "248",
+        "conference_id": "8",
+        "conference_name": "Big 12 Conference"
+    },
+    "12": {
+        "team_name": "Arizona Wildcats",
+        "team_id": "12",
+        "conference_id": "8",
+        "conference_name": "Big 12 Conference"
+    },
+    "46": {
+        "team_name": "Georgetown Hoyas",
+        "team_id": "46",
+        "conference_id": "4",
+        "conference_name": "Big East Conference"
+    },
+    "2752": {
+        "team_name": "Xavier Musketeers",
+        "team_id": "2752",
+        "conference_id": "4",
+        "conference_name": "Big East Conference"
+    },
+    "2086": {
+        "team_name": "Butler Bulldogs",
+        "team_id": "2086",
+        "conference_id": "4",
+        "conference_name": "Big East Conference"
+    },
+    "2507": {
+        "team_name": "Providence Friars",
+        "team_id": "2507",
+        "conference_id": "4",
+        "conference_name": "Big East Conference"
+    },
+    "269": {
+        "team_name": "Marquette Golden Eagles",
+        "team_id": "269",
+        "conference_id": "4",
+        "conference_name": "Big East Conference"
+    },
+    "305": {
+        "team_name": "DePaul Blue Demons",
+        "team_id": "305",
+        "conference_id": "4",
+        "conference_name": "Big East Conference"
+    },
+    "156": {
+        "team_name": "Creighton Bluejays",
+        "team_id": "156",
+        "conference_id": "4",
+        "conference_name": "Big East Conference"
+    },
+    "2550": {
+        "team_name": "Seton Hall Pirates",
+        "team_id": "2550",
+        "conference_id": "4",
+        "conference_name": "Big East Conference"
+    },
+    "222": {
+        "team_name": "Villanova Wildcats",
+        "team_id": "222",
+        "conference_id": "4",
+        "conference_name": "Big East Conference"
+    },
+    "41": {
+        "team_name": "UConn Huskies",
+        "team_id": "41",
+        "conference_id": "4",
+        "conference_name": "Big East Conference"
+    },
+    "2599": {
+        "team_name": "St. John's Red Storm",
+        "team_id": "2599",
+        "conference_id": "4",
+        "conference_name": "Big East Conference"
+    },
+    "2464": {
+        "team_name": "Northern Arizona Lumberjacks",
+        "team_id": "2464",
+        "conference_id": "5",
+        "conference_name": "Big Sky Conference"
+    },
+    "304": {
+        "team_name": "Idaho State Bengals",
+        "team_id": "304",
+        "conference_id": "5",
+        "conference_name": "Big Sky Conference"
+    },
+    "16": {
+        "team_name": "Sacramento State Hornets",
+        "team_id": "16",
+        "conference_id": "5",
+        "conference_name": "Big Sky Conference"
+    },
+    "70": {
+        "team_name": "Idaho Vandals",
+        "team_id": "70",
+        "conference_id": "5",
+        "conference_name": "Big Sky Conference"
+    },
+    "2458": {
+        "team_name": "Northern Colorado Bears",
+        "team_id": "2458",
+        "conference_id": "5",
+        "conference_name": "Big Sky Conference"
+    },
+    "149": {
+        "team_name": "Montana Grizzlies",
+        "team_id": "149",
+        "conference_id": "5",
+        "conference_name": "Big Sky Conference"
+    },
+    "2692": {
+        "team_name": "Weber State Wildcats",
+        "team_id": "2692",
+        "conference_id": "5",
+        "conference_name": "Big Sky Conference"
+    },
+    "331": {
+        "team_name": "Eastern Washington Eagles",
+        "team_id": "331",
+        "conference_id": "5",
+        "conference_name": "Big Sky Conference"
+    },
+    "147": {
+        "team_name": "Montana State Bobcats",
+        "team_id": "147",
+        "conference_id": "5",
+        "conference_name": "Big Sky Conference"
+    },
+    "2502": {
+        "team_name": "Portland State Vikings",
+        "team_id": "2502",
+        "conference_id": "5",
+        "conference_name": "Big Sky Conference"
+    },
+    "2241": {
+        "team_name": "Gardner-Webb Runnin' Bulldogs",
+        "team_id": "2241",
+        "conference_id": "6",
+        "conference_name": "Big South Conference"
+    },
+    "2908": {
+        "team_name": "South Carolina Upstate Spartans",
+        "team_id": "2908",
+        "conference_id": "6",
+        "conference_name": "Big South Conference"
+    },
+    "2127": {
+        "team_name": "Charleston Southern Buccaneers",
+        "team_id": "2127",
+        "conference_id": "6",
+        "conference_name": "Big South Conference"
+    },
+    "2506": {
+        "team_name": "Presbyterian Blue Hose",
+        "team_id": "2506",
+        "conference_id": "6",
+        "conference_name": "Big South Conference"
+    },
+    "2344": {
+        "team_name": "Longwood Lancers",
+        "team_id": "2344",
+        "conference_id": "6",
+        "conference_name": "Big South Conference"
+    },
+    "2427": {
+        "team_name": "UNC Asheville Bulldogs",
+        "team_id": "2427",
+        "conference_id": "6",
+        "conference_name": "Big South Conference"
+    },
+    "2515": {
+        "team_name": "Radford Highlanders",
+        "team_id": "2515",
+        "conference_id": "6",
+        "conference_name": "Big South Conference"
+    },
+    "2737": {
+        "team_name": "Winthrop Eagles",
+        "team_id": "2737",
+        "conference_id": "6",
+        "conference_name": "Big South Conference"
+    },
+    "2272": {
+        "team_name": "High Point Panthers",
+        "team_id": "2272",
+        "conference_id": "6",
+        "conference_name": "Big South Conference"
+    },
+    "213": {
+        "team_name": "Penn State Nittany Lions",
+        "team_id": "213",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "120": {
+        "team_name": "Maryland Terrapins",
+        "team_id": "120",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "77": {
+        "team_name": "Northwestern Wildcats",
+        "team_id": "77",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "2483": {
+        "team_name": "Oregon Ducks",
+        "team_id": "2483",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "164": {
+        "team_name": "Rutgers Scarlet Knights",
+        "team_id": "164",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "30": {
+        "team_name": "USC Trojans",
+        "team_id": "30",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "264": {
+        "team_name": "Washington Huskies",
+        "team_id": "264",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "135": {
+        "team_name": "Minnesota Golden Gophers",
+        "team_id": "135",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "84": {
+        "team_name": "Indiana Hoosiers",
+        "team_id": "84",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "2294": {
+        "team_name": "Iowa Hawkeyes",
+        "team_id": "2294",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "194": {
+        "team_name": "Ohio State Buckeyes",
+        "team_id": "194",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "2509": {
+        "team_name": "Purdue Boilermakers",
+        "team_id": "2509",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "26": {
+        "team_name": "UCLA Bruins",
+        "team_id": "26",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "275": {
+        "team_name": "Wisconsin Badgers",
+        "team_id": "275",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "158": {
+        "team_name": "Nebraska Cornhuskers",
+        "team_id": "158",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "127": {
+        "team_name": "Michigan State Spartans",
+        "team_id": "127",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "356": {
+        "team_name": "Illinois Fighting Illini",
+        "team_id": "356",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "130": {
+        "team_name": "Michigan Wolverines",
+        "team_id": "130",
+        "conference_id": "7",
+        "conference_name": "Big Ten Conference"
+    },
+    "2934": {
+        "team_name": "Cal State Bakersfield Roadrunners",
+        "team_id": "2934",
+        "conference_id": "9",
+        "conference_name": "Big West Conference"
+    },
+    "27": {
+        "team_name": "UC Riverside Highlanders",
+        "team_id": "27",
+        "conference_id": "9",
+        "conference_name": "Big West Conference"
+    },
+    "299": {
+        "team_name": "Long Beach State Beach",
+        "team_id": "299",
+        "conference_id": "9",
+        "conference_name": "Big West Conference"
+    },
+    "13": {
+        "team_name": "Cal Poly Mustangs",
+        "team_id": "13",
+        "conference_id": "9",
+        "conference_name": "Big West Conference"
+    },
+    "302": {
+        "team_name": "UC Davis Aggies",
+        "team_id": "302",
+        "conference_id": "9",
+        "conference_name": "Big West Conference"
+    },
+    "2540": {
+        "team_name": "UC Santa Barbara Gauchos",
+        "team_id": "2540",
+        "conference_id": "9",
+        "conference_name": "Big West Conference"
+    },
+    "28": {
+        "team_name": "UC San Diego Tritons",
+        "team_id": "28",
+        "conference_id": "9",
+        "conference_name": "Big West Conference"
+    },
+    "2463": {
+        "team_name": "Cal State Northridge Matadors",
+        "team_id": "2463",
+        "conference_id": "9",
+        "conference_name": "Big West Conference"
+    },
+    "2239": {
+        "team_name": "Cal State Fullerton Titans",
+        "team_id": "2239",
+        "conference_id": "9",
+        "conference_name": "Big West Conference"
+    },
+    "62": {
+        "team_name": "Hawai'i Rainbow Warriors",
+        "team_id": "62",
+        "conference_id": "9",
+        "conference_name": "Big West Conference"
+    },
+    "300": {
+        "team_name": "UC Irvine Anteaters",
+        "team_id": "300",
+        "conference_id": "9",
+        "conference_name": "Big West Conference"
+    },
+    "111": {
+        "team_name": "Northeastern Huskies",
+        "team_id": "111",
+        "conference_id": "10",
+        "conference_name": "Coastal Athletic Association"
+    },
+    "2448": {
+        "team_name": "North Carolina A&T Aggies",
+        "team_id": "2448",
+        "conference_id": "10",
+        "conference_name": "Coastal Athletic Association"
+    },
+    "2210": {
+        "team_name": "Elon Phoenix",
+        "team_id": "2210",
+        "conference_id": "10",
+        "conference_name": "Coastal Athletic Association"
+    },
+    "2261": {
+        "team_name": "Hampton Pirates",
+        "team_id": "2261",
+        "conference_id": "10",
+        "conference_name": "Coastal Athletic Association"
+    },
+    "2097": {
+        "team_name": "Campbell Fighting Camels",
+        "team_id": "2097",
+        "conference_id": "10",
+        "conference_name": "Coastal Athletic Association"
+    },
+    "119": {
+        "team_name": "Towson Tigers",
+        "team_id": "119",
+        "conference_id": "10",
+        "conference_name": "Coastal Athletic Association"
+    },
+    "2619": {
+        "team_name": "Stony Brook Seawolves",
+        "team_id": "2619",
+        "conference_id": "10",
+        "conference_name": "Coastal Athletic Association"
+    },
+    "2729": {
+        "team_name": "William & Mary Tribe",
+        "team_id": "2729",
+        "conference_id": "10",
+        "conference_name": "Coastal Athletic Association"
+    },
+    "2182": {
+        "team_name": "Drexel Dragons",
+        "team_id": "2182",
+        "conference_id": "10",
+        "conference_name": "Coastal Athletic Association"
+    },
+    "2405": {
+        "team_name": "Monmouth Hawks",
+        "team_id": "2405",
+        "conference_id": "10",
+        "conference_name": "Coastal Athletic Association"
+    },
+    "2275": {
+        "team_name": "Hofstra Pride",
+        "team_id": "2275",
+        "conference_id": "10",
+        "conference_name": "Coastal Athletic Association"
+    },
+    "232": {
+        "team_name": "Charleston Cougars",
+        "team_id": "232",
+        "conference_id": "10",
+        "conference_name": "Coastal Athletic Association"
+    },
+    "350": {
+        "team_name": "UNC Wilmington Seahawks",
+        "team_id": "350",
+        "conference_id": "10",
+        "conference_name": "Coastal Athletic Association"
+    },
+    "48": {
+        "team_name": "Delaware Blue Hens",
+        "team_id": "48",
+        "conference_id": "11",
+        "conference_name": "Conference USA"
+    },
+    "2638": {
+        "team_name": "UTEP Miners",
+        "team_id": "2638",
+        "conference_id": "11",
+        "conference_name": "Conference USA"
+    },
+    "166": {
+        "team_name": "New Mexico State Aggies",
+        "team_id": "166",
+        "conference_id": "11",
+        "conference_name": "Conference USA"
+    },
+    "2623": {
+        "team_name": "Missouri State Bears",
+        "team_id": "2623",
+        "conference_id": "11",
+        "conference_name": "Conference USA"
+    },
+    "2229": {
+        "team_name": "Florida International Panthers",
+        "team_id": "2229",
+        "conference_id": "11",
+        "conference_name": "Conference USA"
+    },
+    "338": {
+        "team_name": "Kennesaw State Owls",
+        "team_id": "338",
+        "conference_id": "11",
+        "conference_name": "Conference USA"
+    },
+    "55": {
+        "team_name": "Jacksonville State Gamecocks",
+        "team_id": "55",
+        "conference_id": "11",
+        "conference_name": "Conference USA"
+    },
+    "2348": {
+        "team_name": "Louisiana Tech Bulldogs",
+        "team_id": "2348",
+        "conference_id": "11",
+        "conference_name": "Conference USA"
+    },
+    "98": {
+        "team_name": "Western Kentucky Hilltoppers",
+        "team_id": "98",
+        "conference_id": "11",
+        "conference_name": "Conference USA"
+    },
+    "2393": {
+        "team_name": "Middle Tennessee Blue Raiders",
+        "team_id": "2393",
+        "conference_id": "11",
+        "conference_name": "Conference USA"
+    },
+    "2534": {
+        "team_name": "Sam Houston Bearkats",
+        "team_id": "2534",
+        "conference_id": "11",
+        "conference_name": "Conference USA"
+    },
+    "2335": {
+        "team_name": "Liberty Flames",
+        "team_id": "2335",
+        "conference_id": "11",
+        "conference_name": "Conference USA"
+    },
+    "85": {
+        "team_name": "IU Indianapolis Jaguars",
+        "team_id": "85",
+        "conference_id": "45",
+        "conference_name": "Horizon League"
+    },
+    "325": {
+        "team_name": "Cleveland State Vikings",
+        "team_id": "325",
+        "conference_id": "45",
+        "conference_name": "Horizon League"
+    },
+    "2754": {
+        "team_name": "Youngstown State Penguins",
+        "team_id": "2754",
+        "conference_id": "45",
+        "conference_name": "Horizon League"
+    },
+    "270": {
+        "team_name": "Milwaukee Panthers",
+        "team_id": "270",
+        "conference_id": "45",
+        "conference_name": "Horizon League"
+    },
+    "94": {
+        "team_name": "Northern Kentucky Norse",
+        "team_id": "94",
+        "conference_id": "45",
+        "conference_name": "Horizon League"
+    },
+    "2870": {
+        "team_name": "Purdue Fort Wayne Mastodons",
+        "team_id": "2870",
+        "conference_id": "45",
+        "conference_name": "Horizon League"
+    },
+    "2739": {
+        "team_name": "Green Bay Phoenix",
+        "team_id": "2739",
+        "conference_id": "45",
+        "conference_name": "Horizon League"
+    },
+    "2174": {
+        "team_name": "Detroit Mercy Titans",
+        "team_id": "2174",
+        "conference_id": "45",
+        "conference_name": "Horizon League"
+    },
+    "2473": {
+        "team_name": "Oakland Golden Grizzlies",
+        "team_id": "2473",
+        "conference_id": "45",
+        "conference_name": "Horizon League"
+    },
+    "2523": {
+        "team_name": "Robert Morris Colonials",
+        "team_id": "2523",
+        "conference_id": "45",
+        "conference_name": "Horizon League"
+    },
+    "2750": {
+        "team_name": "Wright State Raiders",
+        "team_id": "2750",
+        "conference_id": "45",
+        "conference_name": "Horizon League"
+    },
+    "225": {
+        "team_name": "Brown Bears",
+        "team_id": "225",
+        "conference_id": "12",
+        "conference_name": "Ivy League"
+    },
+    "171": {
+        "team_name": "Columbia Lions",
+        "team_id": "171",
+        "conference_id": "12",
+        "conference_name": "Ivy League"
+    },
+    "159": {
+        "team_name": "Dartmouth Big Green",
+        "team_id": "159",
+        "conference_id": "12",
+        "conference_name": "Ivy League"
+    },
+    "163": {
+        "team_name": "Princeton Tigers",
+        "team_id": "163",
+        "conference_id": "12",
+        "conference_name": "Ivy League"
+    },
+    "172": {
+        "team_name": "Cornell Big Red",
+        "team_id": "172",
+        "conference_id": "12",
+        "conference_name": "Ivy League"
+    },
+    "219": {
+        "team_name": "Pennsylvania Quakers",
+        "team_id": "219",
+        "conference_id": "12",
+        "conference_name": "Ivy League"
+    },
+    "108": {
+        "team_name": "Harvard Crimson",
+        "team_id": "108",
+        "conference_id": "12",
+        "conference_name": "Ivy League"
+    },
+    "43": {
+        "team_name": "Yale Bulldogs",
+        "team_id": "43",
+        "conference_id": "12",
+        "conference_name": "Ivy League"
+    },
+    "2520": {
+        "team_name": "Rider Broncs",
+        "team_id": "2520",
+        "conference_id": "13",
+        "conference_name": "Metro Conference"
+    },
+    "2099": {
+        "team_name": "Canisius Golden Griffins",
+        "team_id": "2099",
+        "conference_id": "13",
+        "conference_name": "Metro Conference"
+    },
+    "315": {
+        "team_name": "Niagara Purple Eagles",
+        "team_id": "315",
+        "conference_id": "13",
+        "conference_name": "Metro Conference"
+    },
+    "2363": {
+        "team_name": "Manhattan Jaspers",
+        "team_id": "2363",
+        "conference_id": "13",
+        "conference_name": "Metro Conference"
+    },
+    "2529": {
+        "team_name": "Sacred Heart Pioneers",
+        "team_id": "2529",
+        "conference_id": "13",
+        "conference_name": "Metro Conference"
+    },
+    "314": {
+        "team_name": "Iona Gaels",
+        "team_id": "314",
+        "conference_id": "13",
+        "conference_name": "Metro Conference"
+    },
+    "2217": {
+        "team_name": "Fairfield Stags",
+        "team_id": "2217",
+        "conference_id": "13",
+        "conference_name": "Metro Conference"
+    },
+    "116": {
+        "team_name": "Mount St. Mary's Mountaineers",
+        "team_id": "116",
+        "conference_id": "13",
+        "conference_name": "Metro Conference"
+    },
+    "2368": {
+        "team_name": "Marist Red Foxes",
+        "team_id": "2368",
+        "conference_id": "13",
+        "conference_name": "Metro Conference"
+    },
+    "2514": {
+        "team_name": "Quinnipiac Bobcats",
+        "team_id": "2514",
+        "conference_id": "13",
+        "conference_name": "Metro Conference"
+    },
+    "2561": {
+        "team_name": "Siena Saints",
+        "team_id": "2561",
+        "conference_id": "13",
+        "conference_name": "Metro Conference"
+    },
+    "2612": {
+        "team_name": "Saint Peter's Peacocks",
+        "team_id": "2612",
+        "conference_id": "13",
+        "conference_name": "Metro Conference"
+    },
+    "2771": {
+        "team_name": "Merrimack Warriors",
+        "team_id": "2771",
+        "conference_id": "13",
+        "conference_name": "Metro Conference"
+    },
+    "2711": {
+        "team_name": "Western Michigan Broncos",
+        "team_id": "2711",
+        "conference_id": "14",
+        "conference_name": "Mid-American Conference"
+    },
+    "2199": {
+        "team_name": "Eastern Michigan Eagles",
+        "team_id": "2199",
+        "conference_id": "14",
+        "conference_name": "Mid-American Conference"
+    },
+    "2459": {
+        "team_name": "Northern Illinois Huskies",
+        "team_id": "2459",
+        "conference_id": "14",
+        "conference_name": "Mid-American Conference"
+    },
+    "2117": {
+        "team_name": "Central Michigan Chippewas",
+        "team_id": "2117",
+        "conference_id": "14",
+        "conference_name": "Mid-American Conference"
+    },
+    "2084": {
+        "team_name": "Buffalo Bulls",
+        "team_id": "2084",
+        "conference_id": "14",
+        "conference_name": "Mid-American Conference"
+    },
+    "113": {
+        "team_name": "Massachusetts Minutemen",
+        "team_id": "113",
+        "conference_id": "14",
+        "conference_name": "Mid-American Conference"
+    },
+    "2050": {
+        "team_name": "Ball State Cardinals",
+        "team_id": "2050",
+        "conference_id": "14",
+        "conference_name": "Mid-American Conference"
+    },
+    "189": {
+        "team_name": "Bowling Green Falcons",
+        "team_id": "189",
+        "conference_id": "14",
+        "conference_name": "Mid-American Conference"
+    },
+    "195": {
+        "team_name": "Ohio Bobcats",
+        "team_id": "195",
+        "conference_id": "14",
+        "conference_name": "Mid-American Conference"
+    },
+    "2649": {
+        "team_name": "Toledo Rockets",
+        "team_id": "2649",
+        "conference_id": "14",
+        "conference_name": "Mid-American Conference"
+    },
+    "2309": {
+        "team_name": "Kent State Golden Flashes",
+        "team_id": "2309",
+        "conference_id": "14",
+        "conference_name": "Mid-American Conference"
+    },
+    "2006": {
+        "team_name": "Akron Zips",
+        "team_id": "2006",
+        "conference_id": "14",
+        "conference_name": "Mid-American Conference"
+    },
+    "193": {
+        "team_name": "Miami (OH) RedHawks",
+        "team_id": "193",
+        "conference_id": "14",
+        "conference_name": "Mid-American Conference"
+    },
+    "2169": {
+        "team_name": "Delaware State Hornets",
+        "team_id": "2169",
+        "conference_id": "16",
+        "conference_name": "Mid-Eastern Athletic Conference"
+    },
+    "2379": {
+        "team_name": "Maryland Eastern Shore Hawks",
+        "team_id": "2379",
+        "conference_id": "16",
+        "conference_name": "Mid-Eastern Athletic Conference"
+    },
+    "2154": {
+        "team_name": "Coppin State Eagles",
+        "team_id": "2154",
+        "conference_id": "16",
+        "conference_name": "Mid-Eastern Athletic Conference"
+    },
+    "2569": {
+        "team_name": "South Carolina State Bulldogs",
+        "team_id": "2569",
+        "conference_id": "16",
+        "conference_name": "Mid-Eastern Athletic Conference"
+    },
+    "2450": {
+        "team_name": "Norfolk State Spartans",
+        "team_id": "2450",
+        "conference_id": "16",
+        "conference_name": "Mid-Eastern Athletic Conference"
+    },
+    "2428": {
+        "team_name": "North Carolina Central Eagles",
+        "team_id": "2428",
+        "conference_id": "16",
+        "conference_name": "Mid-Eastern Athletic Conference"
+    },
+    "2415": {
+        "team_name": "Morgan State Bears",
+        "team_id": "2415",
+        "conference_id": "16",
+        "conference_name": "Mid-Eastern Athletic Conference"
+    },
+    "47": {
+        "team_name": "Howard Bison",
+        "team_id": "47",
+        "conference_id": "16",
+        "conference_name": "Mid-Eastern Athletic Conference"
+    },
+    "339": {
+        "team_name": "Evansville Purple Aces",
+        "team_id": "339",
+        "conference_id": "18",
+        "conference_name": "Missouri Valley Conference"
+    },
+    "282": {
+        "team_name": "Indiana State Sycamores",
+        "team_id": "282",
+        "conference_id": "18",
+        "conference_name": "Missouri Valley Conference"
+    },
+    "2181": {
+        "team_name": "Drake Bulldogs",
+        "team_id": "2181",
+        "conference_id": "18",
+        "conference_name": "Missouri Valley Conference"
+    },
+    "79": {
+        "team_name": "Southern Illinois Salukis",
+        "team_id": "79",
+        "conference_id": "18",
+        "conference_name": "Missouri Valley Conference"
+    },
+    "2460": {
+        "team_name": "Northern Iowa Panthers",
+        "team_id": "2460",
+        "conference_id": "18",
+        "conference_name": "Missouri Valley Conference"
+    },
+    "2674": {
+        "team_name": "Valparaiso Beacons",
+        "team_id": "2674",
+        "conference_id": "18",
+        "conference_name": "Missouri Valley Conference"
+    },
+    "2287": {
+        "team_name": "Illinois State Redbirds",
+        "team_id": "2287",
+        "conference_id": "18",
+        "conference_name": "Missouri Valley Conference"
+    },
+    "93": {
+        "team_name": "Murray State Racers",
+        "team_id": "93",
+        "conference_id": "18",
+        "conference_name": "Missouri Valley Conference"
+    },
+    "82": {
+        "team_name": "UIC Flames",
+        "team_id": "82",
+        "conference_id": "18",
+        "conference_name": "Missouri Valley Conference"
+    },
+    "71": {
+        "team_name": "Bradley Braves",
+        "team_id": "71",
+        "conference_id": "18",
+        "conference_name": "Missouri Valley Conference"
+    },
+    "2057": {
+        "team_name": "Belmont Bruins",
+        "team_id": "2057",
+        "conference_id": "18",
+        "conference_name": "Missouri Valley Conference"
+    },
+    "2005": {
+        "team_name": "Air Force Falcons",
+        "team_id": "2005",
+        "conference_id": "44",
+        "conference_name": "Mountain West Conference"
+    },
+    "23": {
+        "team_name": "San Jos\u00e9 State Spartans",
+        "team_id": "23",
+        "conference_id": "44",
+        "conference_name": "Mountain West Conference"
+    },
+    "278": {
+        "team_name": "Fresno State Bulldogs",
+        "team_id": "278",
+        "conference_id": "44",
+        "conference_name": "Mountain West Conference"
+    },
+    "2751": {
+        "team_name": "Wyoming Cowboys",
+        "team_id": "2751",
+        "conference_id": "44",
+        "conference_name": "Mountain West Conference"
+    },
+    "36": {
+        "team_name": "Colorado State Rams",
+        "team_id": "36",
+        "conference_id": "44",
+        "conference_name": "Mountain West Conference"
+    },
+    "2439": {
+        "team_name": "UNLV Rebels",
+        "team_id": "2439",
+        "conference_id": "44",
+        "conference_name": "Mountain West Conference"
+    },
+    "2440": {
+        "team_name": "Nevada Wolf Pack",
+        "team_id": "2440",
+        "conference_id": "44",
+        "conference_name": "Mountain West Conference"
+    },
+    "68": {
+        "team_name": "Boise State Broncos",
+        "team_id": "68",
+        "conference_id": "44",
+        "conference_name": "Mountain West Conference"
+    },
+    "167": {
+        "team_name": "New Mexico Lobos",
+        "team_id": "167",
+        "conference_id": "44",
+        "conference_name": "Mountain West Conference"
+    },
+    "2253": {
+        "team_name": "Grand Canyon Lopes",
+        "team_id": "2253",
+        "conference_id": "44",
+        "conference_name": "Mountain West Conference"
+    },
+    "21": {
+        "team_name": "San Diego State Aztecs",
+        "team_id": "21",
+        "conference_id": "44",
+        "conference_name": "Mountain West Conference"
+    },
+    "328": {
+        "team_name": "Utah State Aggies",
+        "team_id": "328",
+        "conference_id": "44",
+        "conference_name": "Mountain West Conference"
+    },
+    "2598": {
+        "team_name": "Saint Francis Red Wolves",
+        "team_id": "2598",
+        "conference_id": "19",
+        "conference_name": "Northeast Conference"
+    },
+    "2130": {
+        "team_name": "Chicago State Cougars",
+        "team_id": "2130",
+        "conference_id": "19",
+        "conference_name": "Northeast Conference"
+    },
+    "2681": {
+        "team_name": "Wagner Seahawks",
+        "team_id": "2681",
+        "conference_id": "19",
+        "conference_name": "Northeast Conference"
+    },
+    "284": {
+        "team_name": "Stonehill Skyhawks",
+        "team_id": "284",
+        "conference_id": "19",
+        "conference_name": "Northeast Conference"
+    },
+    "161": {
+        "team_name": "Fairleigh Dickinson Knights",
+        "team_id": "161",
+        "conference_id": "19",
+        "conference_name": "Northeast Conference"
+    },
+    "2441": {
+        "team_name": "New Haven Chargers",
+        "team_id": "2441",
+        "conference_id": "19",
+        "conference_name": "Northeast Conference"
+    },
+    "2385": {
+        "team_name": "Mercyhurst Lakers",
+        "team_id": "2385",
+        "conference_id": "19",
+        "conference_name": "Northeast Conference"
+    },
+    "2330": {
+        "team_name": "Le Moyne Dolphins",
+        "team_id": "2330",
+        "conference_id": "19",
+        "conference_name": "Northeast Conference"
+    },
+    "2115": {
+        "team_name": "Central Connecticut Blue Devils",
+        "team_id": "2115",
+        "conference_id": "19",
+        "conference_name": "Northeast Conference"
+    },
+    "112358": {
+        "team_name": "Long Island University Sharks",
+        "team_id": "112358",
+        "conference_id": "19",
+        "conference_name": "Northeast Conference"
+    },
+    "2710": {
+        "team_name": "Western Illinois Leathernecks",
+        "team_id": "2710",
+        "conference_id": "20",
+        "conference_name": "Ohio Valley Conference"
+    },
+    "88": {
+        "team_name": "Southern Indiana Screaming Eagles",
+        "team_id": "88",
+        "conference_id": "20",
+        "conference_name": "Ohio Valley Conference"
+    },
+    "2635": {
+        "team_name": "Tennessee Tech Golden Eagles",
+        "team_id": "2635",
+        "conference_id": "20",
+        "conference_name": "Ohio Valley Conference"
+    },
+    "2197": {
+        "team_name": "Eastern Illinois Panthers",
+        "team_id": "2197",
+        "conference_id": "20",
+        "conference_name": "Ohio Valley Conference"
+    },
+    "2031": {
+        "team_name": "Little Rock Trojans",
+        "team_id": "2031",
+        "conference_id": "20",
+        "conference_name": "Ohio Valley Conference"
+    },
+    "2815": {
+        "team_name": "Lindenwood Lions",
+        "team_id": "2815",
+        "conference_id": "20",
+        "conference_name": "Ohio Valley Conference"
+    },
+    "2565": {
+        "team_name": "SIU Edwardsville Cougars",
+        "team_id": "2565",
+        "conference_id": "20",
+        "conference_name": "Ohio Valley Conference"
+    },
+    "2630": {
+        "team_name": "UT Martin Skyhawks",
+        "team_id": "2630",
+        "conference_id": "20",
+        "conference_name": "Ohio Valley Conference"
+    },
+    "2546": {
+        "team_name": "Southeast Missouri State Redhawks",
+        "team_id": "2546",
+        "conference_id": "20",
+        "conference_name": "Ohio Valley Conference"
+    },
+    "2634": {
+        "team_name": "Tennessee State Tigers",
+        "team_id": "2634",
+        "conference_id": "20",
+        "conference_name": "Ohio Valley Conference"
+    },
+    "2413": {
+        "team_name": "Morehead State Eagles",
+        "team_id": "2413",
+        "conference_id": "20",
+        "conference_name": "Ohio Valley Conference"
+    },
+    "349": {
+        "team_name": "Army Black Knights",
+        "team_id": "349",
+        "conference_id": "22",
+        "conference_name": "Patriot League"
+    },
+    "107": {
+        "team_name": "Holy Cross Crusaders",
+        "team_id": "107",
+        "conference_id": "22",
+        "conference_name": "Patriot League"
+    },
+    "2083": {
+        "team_name": "Bucknell Bison",
+        "team_id": "2083",
+        "conference_id": "22",
+        "conference_name": "Patriot League"
+    },
+    "2352": {
+        "team_name": "Loyola Maryland Greyhounds",
+        "team_id": "2352",
+        "conference_id": "22",
+        "conference_name": "Patriot League"
+    },
+    "322": {
+        "team_name": "Lafayette Leopards",
+        "team_id": "322",
+        "conference_id": "22",
+        "conference_name": "Patriot League"
+    },
+    "44": {
+        "team_name": "American University Eagles",
+        "team_id": "44",
+        "conference_id": "22",
+        "conference_name": "Patriot League"
+    },
+    "104": {
+        "team_name": "Boston University Terriers",
+        "team_id": "104",
+        "conference_id": "22",
+        "conference_name": "Patriot League"
+    },
+    "2142": {
+        "team_name": "Colgate Raiders",
+        "team_id": "2142",
+        "conference_id": "22",
+        "conference_name": "Patriot League"
+    },
+    "2329": {
+        "team_name": "Lehigh Mountain Hawks",
+        "team_id": "2329",
+        "conference_id": "22",
+        "conference_name": "Patriot League"
+    },
+    "2426": {
+        "team_name": "Navy Midshipmen",
+        "team_id": "2426",
+        "conference_id": "22",
+        "conference_name": "Patriot League"
+    },
+    "99": {
+        "team_name": "LSU Tigers",
+        "team_id": "99",
+        "conference_id": "23",
+        "conference_name": "Southeastern Conference"
+    },
+    "145": {
+        "team_name": "Ole Miss Rebels",
+        "team_id": "145",
+        "conference_id": "23",
+        "conference_name": "Southeastern Conference"
+    },
+    "2579": {
+        "team_name": "South Carolina Gamecocks",
+        "team_id": "2579",
+        "conference_id": "23",
+        "conference_name": "Southeastern Conference"
+    },
+    "344": {
+        "team_name": "Mississippi State Bulldogs",
+        "team_id": "344",
+        "conference_id": "23",
+        "conference_name": "Southeastern Conference"
+    },
+    "2": {
+        "team_name": "Auburn Tigers",
+        "team_id": "2",
+        "conference_id": "23",
+        "conference_name": "Southeastern Conference"
+    },
+    "201": {
+        "team_name": "Oklahoma Sooners",
+        "team_id": "201",
+        "conference_id": "23",
+        "conference_name": "Southeastern Conference"
+    },
+    "251": {
+        "team_name": "Texas Longhorns",
+        "team_id": "251",
+        "conference_id": "23",
+        "conference_name": "Southeastern Conference"
+    },
+    "61": {
+        "team_name": "Georgia Bulldogs",
+        "team_id": "61",
+        "conference_id": "23",
+        "conference_name": "Southeastern Conference"
+    },
+    "96": {
+        "team_name": "Kentucky Wildcats",
+        "team_id": "96",
+        "conference_id": "23",
+        "conference_name": "Southeastern Conference"
+    },
+    "142": {
+        "team_name": "Missouri Tigers",
+        "team_id": "142",
+        "conference_id": "23",
+        "conference_name": "Southeastern Conference"
+    },
+    "238": {
+        "team_name": "Vanderbilt Commodores",
+        "team_id": "238",
+        "conference_id": "23",
+        "conference_name": "Southeastern Conference"
+    },
+    "2633": {
+        "team_name": "Tennessee Volunteers",
+        "team_id": "2633",
+        "conference_id": "23",
+        "conference_name": "Southeastern Conference"
+    },
+    "245": {
+        "team_name": "Texas A&M Aggies",
+        "team_id": "245",
+        "conference_id": "23",
+        "conference_name": "Southeastern Conference"
+    },
+    "8": {
+        "team_name": "Arkansas Razorbacks",
+        "team_id": "8",
+        "conference_id": "23",
+        "conference_name": "Southeastern Conference"
+    },
+    "333": {
+        "team_name": "Alabama Crimson Tide",
+        "team_id": "333",
+        "conference_id": "23",
+        "conference_name": "Southeastern Conference"
+    },
+    "57": {
+        "team_name": "Florida Gators",
+        "team_id": "57",
+        "conference_id": "23",
+        "conference_name": "Southeastern Conference"
+    },
+    "2678": {
+        "team_name": "VMI Keydets",
+        "team_id": "2678",
+        "conference_id": "24",
+        "conference_name": "Southern Conference"
+    },
+    "236": {
+        "team_name": "Chattanooga Mocs",
+        "team_id": "236",
+        "conference_id": "24",
+        "conference_name": "Southern Conference"
+    },
+    "2643": {
+        "team_name": "The Citadel Bulldogs",
+        "team_id": "2643",
+        "conference_id": "24",
+        "conference_name": "Southern Conference"
+    },
+    "2430": {
+        "team_name": "UNC Greensboro Spartans",
+        "team_id": "2430",
+        "conference_id": "24",
+        "conference_name": "Southern Conference"
+    },
+    "231": {
+        "team_name": "Furman Paladins",
+        "team_id": "231",
+        "conference_id": "24",
+        "conference_name": "Southern Conference"
+    },
+    "2717": {
+        "team_name": "Western Carolina Catamounts",
+        "team_id": "2717",
+        "conference_id": "24",
+        "conference_name": "Southern Conference"
+    },
+    "2382": {
+        "team_name": "Mercer Bears",
+        "team_id": "2382",
+        "conference_id": "24",
+        "conference_name": "Southern Conference"
+    },
+    "2747": {
+        "team_name": "Wofford Terriers",
+        "team_id": "2747",
+        "conference_id": "24",
+        "conference_name": "Southern Conference"
+    },
+    "2535": {
+        "team_name": "Samford Bulldogs",
+        "team_id": "2535",
+        "conference_id": "24",
+        "conference_name": "Southern Conference"
+    },
+    "2193": {
+        "team_name": "East Tennessee State Buccaneers",
+        "team_id": "2193",
+        "conference_id": "24",
+        "conference_name": "Southern Conference"
+    },
+    "2837": {
+        "team_name": "East Texas A&M Lions",
+        "team_id": "2837",
+        "conference_id": "25",
+        "conference_name": "Southland Conference"
+    },
+    "2545": {
+        "team_name": "SE Louisiana Lions",
+        "team_id": "2545",
+        "conference_id": "25",
+        "conference_name": "Southland Conference"
+    },
+    "2916": {
+        "team_name": "Incarnate Word Cardinals",
+        "team_id": "2916",
+        "conference_id": "25",
+        "conference_name": "Southland Conference"
+    },
+    "2320": {
+        "team_name": "Lamar Cardinals",
+        "team_id": "2320",
+        "conference_id": "25",
+        "conference_name": "Southland Conference"
+    },
+    "2277": {
+        "team_name": "Houston Christian Huskies",
+        "team_id": "2277",
+        "conference_id": "25",
+        "conference_name": "Southland Conference"
+    },
+    "2466": {
+        "team_name": "Northwestern State Demons",
+        "team_id": "2466",
+        "conference_id": "25",
+        "conference_name": "Southland Conference"
+    },
+    "2443": {
+        "team_name": "LSU New Orleans Privateers",
+        "team_id": "2443",
+        "conference_id": "25",
+        "conference_name": "Southland Conference"
+    },
+    "2447": {
+        "team_name": "Nicholls Colonels",
+        "team_id": "2447",
+        "conference_id": "25",
+        "conference_name": "Southland Conference"
+    },
+    "357": {
+        "team_name": "Texas A&M-Corpus Christi Islanders",
+        "team_id": "357",
+        "conference_id": "25",
+        "conference_name": "Southland Conference"
+    },
+    "292": {
+        "team_name": "UT Rio Grande Valley Vaqueros",
+        "team_id": "292",
+        "conference_id": "25",
+        "conference_name": "Southland Conference"
+    },
+    "2377": {
+        "team_name": "McNeese Cowboys",
+        "team_id": "2377",
+        "conference_id": "25",
+        "conference_name": "Southland Conference"
+    },
+    "2617": {
+        "team_name": "Stephen F. Austin Lumberjacks",
+        "team_id": "2617",
+        "conference_id": "25",
+        "conference_name": "Southland Conference"
+    },
+    "2400": {
+        "team_name": "Mississippi Valley State Delta Devils",
+        "team_id": "2400",
+        "conference_id": "26",
+        "conference_name": "Southwestern Athletic Conference"
+    },
+    "2755": {
+        "team_name": "Grambling Tigers",
+        "team_id": "2755",
+        "conference_id": "26",
+        "conference_name": "Southwestern Athletic Conference"
+    },
+    "2011": {
+        "team_name": "Alabama State Hornets",
+        "team_id": "2011",
+        "conference_id": "26",
+        "conference_name": "Southwestern Athletic Conference"
+    },
+    "2016": {
+        "team_name": "Alcorn State Braves",
+        "team_id": "2016",
+        "conference_id": "26",
+        "conference_name": "Southwestern Athletic Conference"
+    },
+    "2504": {
+        "team_name": "Prairie View A&M Panthers",
+        "team_id": "2504",
+        "conference_id": "26",
+        "conference_name": "Southwestern Athletic Conference"
+    },
+    "2010": {
+        "team_name": "Alabama A&M Bulldogs",
+        "team_id": "2010",
+        "conference_id": "26",
+        "conference_name": "Southwestern Athletic Conference"
+    },
+    "2029": {
+        "team_name": "Arkansas-Pine Bluff Golden Lions",
+        "team_id": "2029",
+        "conference_id": "26",
+        "conference_name": "Southwestern Athletic Conference"
+    },
+    "2640": {
+        "team_name": "Texas Southern Tigers",
+        "team_id": "2640",
+        "conference_id": "26",
+        "conference_name": "Southwestern Athletic Conference"
+    },
+    "2296": {
+        "team_name": "Jackson State Tigers",
+        "team_id": "2296",
+        "conference_id": "26",
+        "conference_name": "Southwestern Athletic Conference"
+    },
+    "2582": {
+        "team_name": "Southern Jaguars",
+        "team_id": "2582",
+        "conference_id": "26",
+        "conference_name": "Southwestern Athletic Conference"
+    },
+    "50": {
+        "team_name": "Florida A&M Rattlers",
+        "team_id": "50",
+        "conference_id": "26",
+        "conference_name": "Southwestern Athletic Conference"
+    },
+    "2065": {
+        "team_name": "Bethune-Cookman Wildcats",
+        "team_id": "2065",
+        "conference_id": "26",
+        "conference_name": "Southwestern Athletic Conference"
+    },
+    "140": {
+        "team_name": "Kansas City Roos",
+        "team_id": "140",
+        "conference_id": "49",
+        "conference_name": "Summit League"
+    },
+    "198": {
+        "team_name": "Oral Roberts Golden Eagles",
+        "team_id": "198",
+        "conference_id": "49",
+        "conference_name": "Summit League"
+    },
+    "2571": {
+        "team_name": "South Dakota State Jackrabbits",
+        "team_id": "2571",
+        "conference_id": "49",
+        "conference_name": "Summit League"
+    },
+    "233": {
+        "team_name": "South Dakota Coyotes",
+        "team_id": "233",
+        "conference_id": "49",
+        "conference_name": "Summit League"
+    },
+    "2437": {
+        "team_name": "Omaha Mavericks",
+        "team_id": "2437",
+        "conference_id": "49",
+        "conference_name": "Summit League"
+    },
+    "2172": {
+        "team_name": "Denver Pioneers",
+        "team_id": "2172",
+        "conference_id": "49",
+        "conference_name": "Summit League"
+    },
+    "155": {
+        "team_name": "North Dakota Fighting Hawks",
+        "team_id": "155",
+        "conference_id": "49",
+        "conference_name": "Summit League"
+    },
+    "2900": {
+        "team_name": "St. Thomas Tommies",
+        "team_id": "2900",
+        "conference_id": "49",
+        "conference_name": "Summit League"
+    },
+    "2449": {
+        "team_name": "North Dakota State Bison",
+        "team_id": "2449",
+        "conference_id": "49",
+        "conference_name": "Summit League"
+    },
+    "2433": {
+        "team_name": "UL Monroe Warhawks",
+        "team_id": "2433",
+        "conference_id": "27",
+        "conference_name": "Sun Belt Conference"
+    },
+    "295": {
+        "team_name": "Old Dominion Monarchs",
+        "team_id": "295",
+        "conference_id": "27",
+        "conference_name": "Sun Belt Conference"
+    },
+    "309": {
+        "team_name": "Louisiana Ragin' Cajuns",
+        "team_id": "309",
+        "conference_id": "27",
+        "conference_name": "Sun Belt Conference"
+    },
+    "2247": {
+        "team_name": "Georgia State Panthers",
+        "team_id": "2247",
+        "conference_id": "27",
+        "conference_name": "Sun Belt Conference"
+    },
+    "290": {
+        "team_name": "Georgia Southern Eagles",
+        "team_id": "290",
+        "conference_id": "27",
+        "conference_name": "Sun Belt Conference"
+    },
+    "256": {
+        "team_name": "James Madison Dukes",
+        "team_id": "256",
+        "conference_id": "27",
+        "conference_name": "Sun Belt Conference"
+    },
+    "2572": {
+        "team_name": "Southern Miss Golden Eagles",
+        "team_id": "2572",
+        "conference_id": "27",
+        "conference_name": "Sun Belt Conference"
+    },
+    "6": {
+        "team_name": "South Alabama Jaguars",
+        "team_id": "6",
+        "conference_id": "27",
+        "conference_name": "Sun Belt Conference"
+    },
+    "2032": {
+        "team_name": "Arkansas State Red Wolves",
+        "team_id": "2032",
+        "conference_id": "27",
+        "conference_name": "Sun Belt Conference"
+    },
+    "326": {
+        "team_name": "Texas State Bobcats",
+        "team_id": "326",
+        "conference_id": "27",
+        "conference_name": "Sun Belt Conference"
+    },
+    "276": {
+        "team_name": "Marshall Thundering Herd",
+        "team_id": "276",
+        "conference_id": "27",
+        "conference_name": "Sun Belt Conference"
+    },
+    "324": {
+        "team_name": "Coastal Carolina Chanticleers",
+        "team_id": "324",
+        "conference_id": "27",
+        "conference_name": "Sun Belt Conference"
+    },
+    "2026": {
+        "team_name": "App State Mountaineers",
+        "team_id": "2026",
+        "conference_id": "27",
+        "conference_name": "Sun Belt Conference"
+    },
+    "2653": {
+        "team_name": "Troy Trojans",
+        "team_id": "2653",
+        "conference_id": "27",
+        "conference_name": "Sun Belt Conference"
+    },
+    "2627": {
+        "team_name": "Tarleton State Texans",
+        "team_id": "2627",
+        "conference_id": "30",
+        "conference_name": "United Athletic Conference"
+    },
+    "2000": {
+        "team_name": "Abilene Christian Wildcats",
+        "team_id": "2000",
+        "conference_id": "30",
+        "conference_name": "United Athletic Conference"
+    },
+    "253": {
+        "team_name": "Southern Utah Thunderbirds",
+        "team_id": "253",
+        "conference_id": "30",
+        "conference_name": "United Athletic Conference"
+    },
+    "250": {
+        "team_name": "UT Arlington Mavericks",
+        "team_id": "250",
+        "conference_id": "30",
+        "conference_name": "United Athletic Conference"
+    },
+    "3101": {
+        "team_name": "Utah Tech Trailblazers",
+        "team_id": "3101",
+        "conference_id": "30",
+        "conference_name": "United Athletic Conference"
+    },
+    "2856": {
+        "team_name": "California Baptist Lancers",
+        "team_id": "2856",
+        "conference_id": "30",
+        "conference_name": "United Athletic Conference"
+    },
+    "3084": {
+        "team_name": "Utah Valley Wolverines",
+        "team_id": "3084",
+        "conference_id": "30",
+        "conference_name": "United Athletic Conference"
+    },
+    "2492": {
+        "team_name": "Pepperdine Waves",
+        "team_id": "2492",
+        "conference_id": "29",
+        "conference_name": "West Coast Conference"
+    },
+    "301": {
+        "team_name": "San Diego Toreros",
+        "team_id": "301",
+        "conference_id": "29",
+        "conference_name": "West Coast Conference"
+    },
+    "2351": {
+        "team_name": "Loyola Marymount Lions",
+        "team_id": "2351",
+        "conference_id": "29",
+        "conference_name": "West Coast Conference"
+    },
+    "2501": {
+        "team_name": "Portland Pilots",
+        "team_id": "2501",
+        "conference_id": "29",
+        "conference_name": "West Coast Conference"
+    },
+    "265": {
+        "team_name": "Washington State Cougars",
+        "team_id": "265",
+        "conference_id": "29",
+        "conference_name": "West Coast Conference"
+    },
+    "2547": {
+        "team_name": "Seattle U Redhawks",
+        "team_id": "2547",
+        "conference_id": "29",
+        "conference_name": "West Coast Conference"
+    },
+    "279": {
+        "team_name": "Pacific Tigers",
+        "team_id": "279",
+        "conference_id": "29",
+        "conference_name": "West Coast Conference"
+    },
+    "2539": {
+        "team_name": "San Francisco Dons",
+        "team_id": "2539",
+        "conference_id": "29",
+        "conference_name": "West Coast Conference"
+    },
+    "204": {
+        "team_name": "Oregon State Beavers",
+        "team_id": "204",
+        "conference_id": "29",
+        "conference_name": "West Coast Conference"
+    },
+    "2541": {
+        "team_name": "Santa Clara Broncos",
+        "team_id": "2541",
+        "conference_id": "29",
+        "conference_name": "West Coast Conference"
+    },
+    "2250": {
+        "team_name": "Gonzaga Bulldogs",
+        "team_id": "2250",
+        "conference_id": "29",
+        "conference_name": "West Coast Conference"
+    },
+    "2608": {
+        "team_name": "Saint Mary's Gaels",
+        "team_id": "2608",
+        "conference_id": "29",
+        "conference_name": "West Coast Conference"
+    }
+}

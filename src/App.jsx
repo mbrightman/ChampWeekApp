@@ -46,7 +46,7 @@ const BRACKET_CONFIGS = {
       { name: 'Championship',  slots: 1, ghosts: []     },
     ],
   },
-  // 13 Teams (MAAC)
+  // 13 Teams (MAAC, CAA)
   DOUBLE_BYE_13: {
     rounds: [
       { name: 'Round 1',       slots: 4, ghosts: [0, 1, 2] }, // Only 1 game played in Rd 1
@@ -56,13 +56,23 @@ const BRACKET_CONFIGS = {
       { name: 'Championship',  slots: 1, ghosts: [] },
     ],
   },
-  // 12 Teams (MVC)
+  // 12 Teams (MWC)
   SINGLE_BYE_12: {
     rounds: [
       { name: 'Round 1',       slots: 4, ghosts: [] },
       { name: 'Quarterfinals', slots: 4, ghosts: [] },
       { name: 'Semifinals',    slots: 2, ghosts: [] },
       { name: 'Championship',  slots: 1, ghosts: [] },
+    ],
+  },
+  // UNIQUE 12 Teams (SWAC)
+  DOUBLE_BYE_12: {
+    rounds: [
+      { name: 'Round 1',       slots: 4, ghosts: [1, 2] },
+      { name: 'Round 2',       slots: 4, ghosts: [1, 2] },    // 2 Games
+      { name: 'Quarterfinals', slots: 4, ghosts: [] },
+      { name: 'Semifinals',    slots: 2, ghosts: [] },        // 2 Games
+      { name: 'Championship',  slots: 1, ghosts: [] },        // 1 Game
     ],
   },
   // 11 Teams (Big East, Mountain West, Horizon)
@@ -86,10 +96,18 @@ const BRACKET_CONFIGS = {
   // 9 Teams (Big South)
   SINGLE_BYE_9: {
     rounds: [
-      { name: 'Round 1',       slots: 4, ghosts: [0, 1, 2] }, // 1 game played at the bottom
+      { name: 'Round 1',       slots: 4, ghosts: [1, 2, 3] }, // 1 game played at the bottom
       { name: 'Quarterfinals', slots: 4, ghosts: [] },
       { name: 'Semifinals',    slots: 2, ghosts: [] },
       { name: 'Championship',  slots: 1, ghosts: [] },
+    ],
+  },
+  // Single Bye 7 Teams (MEAC)
+  SINGLE_BYE_7: {
+    rounds: [
+      { name: 'Round 1',       slots: 4, ghosts: [0] },
+      { name: 'Semifinals',    slots: 2, ghosts: [] },        // 2 Games
+      { name: 'Championship',  slots: 1, ghosts: [] },        // 1 Game
     ],
   },
   // 8 Teams (MAC, Big West, Summit, ASUN, MEAC, SWAC, WAC, America East, NEC)
@@ -100,6 +118,24 @@ const BRACKET_CONFIGS = {
       { name: 'Championship',  slots: 1, ghosts: [] },
     ],
   },
+  // Unique 8 Teams (OVC, Southland, Big West)
+  DOUBLE_BYE_8: {
+    rounds: [
+      { name: 'Round 1',       slots: 4, ghosts: [1, 2] },
+      { name: 'Round 2',       slots: 4, ghosts: [1, 2] },    // 2 Games
+      { name: 'Semifinals',    slots: 2, ghosts: [] },        // 2 Games
+      { name: 'Championship',  slots: 1, ghosts: [] },        // 1 Game
+    ],
+  },
+  // Unique 7 Teams (WAC)
+  DOUBLE_BYE_7: {
+    rounds: [
+      { name: 'Round 1',       slots: 4, ghosts: [0, 1, 2] },
+      { name: 'Round 2',       slots: 4, ghosts: [1, 2] },    // 2 Games
+      { name: 'Semifinals',    slots: 2, ghosts: [] },        // 2 Games
+      { name: 'Championship',  slots: 1, ghosts: [] },        // 1 Game
+    ],
+  },
   // 4 Teams (Ivy League)
   FINAL_4: {
     rounds: [
@@ -107,12 +143,45 @@ const BRACKET_CONFIGS = {
       { name: 'Championship',  slots: 1, ghosts: [] },
     ],
   },
-  // The Stepladder (WCC, OVC, Southland)
+  // The Stepladder (WCC)
   STEPLADDER_WCC: {
     rounds: [
-      { name: 'Round 1',       slots: 4, ghosts: [0, 1, 2] }, // 1 Game
-      { name: 'Round 2',       slots: 4, ghosts: [0, 1] },    // 2 Games
-      { name: 'Quarterfinals', slots: 4, ghosts: [0, 1] },    // 2 Games
+      { name: 'Round 1',       slots: 4, ghosts: [1, 2] },
+      { name: 'Round 2',       slots: 4, ghosts: [1, 2] },    // 2 Games
+      { name: 'Round 3',       slots: 4, ghosts: [1, 2] },    // 2 Games
+      { name: 'Round 4',       slots: 4, ghosts: [1, 2] },    // 2 Games
+      { name: 'Semifinals',    slots: 2, ghosts: [] },        // 2 Games
+      { name: 'Championship',  slots: 1, ghosts: [] },        // 1 Game
+    ],
+  },
+  // The Death Stepladder (Sun Belt)
+  STEPLADDER_SBELT: {
+    rounds: [
+      { name: 'Round 1',       slots: 4, ghosts: [1, 2] },
+      { name: 'Round 2',       slots: 4, ghosts: [1, 2] },    // 2 Games
+      { name: 'Round 3',       slots: 4, ghosts: [1, 2] },    // 2 Games
+      { name: 'Round 4',       slots: 4, ghosts: [1, 2] },    // 2 Games
+      { name: 'Round 5',       slots: 4, ghosts: [1, 2] },    // 2 Games
+      { name: 'Semifinals',    slots: 2, ghosts: [] },        // 2 Games
+      { name: 'Championship',  slots: 1, ghosts: [] },        // 1 Game
+    ],
+  },
+  // Awkward Stepladder (American)
+  STEPLADDER_AMER: {
+    rounds: [
+      { name: 'Round 1',       slots: 4, ghosts: [0, 3] },
+      { name: 'Round 2',       slots: 4, ghosts: [0, 3] },    // 2 Games
+      { name: 'Round 3',       slots: 4, ghosts: [0, 3] },    // 2 Games
+      { name: 'Semifinals',    slots: 2, ghosts: [] },        // 2 Games
+      { name: 'Championship',  slots: 1, ghosts: [] },        // 1 Game
+    ],
+  },
+  // Absurd 11 (Horizon)
+  HORIZON: {
+    rounds: [
+      { name: 'Round 1',       slots: 4, ghosts: [1, 2, 3] },
+      { name: 'Round 2',       slots: 5, ghosts: [] },    
+      { name: 'Round 3',       slots: 4, ghosts: [0, 2, 3] },    // 2 Games
       { name: 'Semifinals',    slots: 2, ghosts: [] },        // 2 Games
       { name: 'Championship',  slots: 1, ghosts: [] },        // 1 Game
     ],
@@ -120,52 +189,51 @@ const BRACKET_CONFIGS = {
 };
 
 // =============================================================================
-// CONFERENCE DEFINITIONS
-// =============================================================================
-// =============================================================================
 // CONFERENCE DEFINITIONS (ALL 31 DIVISION I CONFERENCES)
 // =============================================================================
 const CONFERENCES = [
-  // === MULTI-BYE FORMATS (13-18 Teams) ===
-  { id: '7',  name: 'Big Ten',       config: 'TRIPLE_BYE_18',  dateRange: '20260310-20260315' },
-  { id: '8',  name: 'Big 12',        config: 'DOUBLE_BYE_16',  dateRange: '20260310-20260314' },
-  { id: '23', name: 'SEC',           config: 'DOUBLE_BYE_16',  dateRange: '20260311-20260315' },
-  { id: '2',  name: 'ACC',           config: 'DOUBLE_BYE_15',  dateRange: '20260310-20260314' },
-  { id: '3',  name: 'A-10',          config: 'DOUBLE_BYE_14',  dateRange: '20260311-20260315' },
-  { id: '10', name: 'CAA',           config: 'DOUBLE_BYE_14',  dateRange: '20260303-20260317' }, // <-- ADDED
-  { id: '27', name: 'Sun Belt',      config: 'STEPLADDER_WCC',  dateRange: '20260303-20260317' },
-  { id: '13', name: 'MAAC',          config: 'SINGLE_BYE_10',  dateRange: '20260303-20260317' }, // <-- ADDED
+  // === MAJOR CONFERENCES (Dates: 20260309-20260316) ===
+  { id: '2',  name: 'ACC',           config: 'DOUBLE_BYE_15',  dateRange: '20260309-20260316' },
+  { id: '4',  name: 'Big East',      config: 'SINGLE_BYE_11',  dateRange: '20260309-20260316' },
+  { id: '7',  name: 'Big Ten',       config: 'TRIPLE_BYE_18',  dateRange: '20260309-20260316' },
+  { id: '8',  name: 'Big 12',        config: 'DOUBLE_BYE_16',  dateRange: '20260309-20260316' },
+  { id: '23', name: 'SEC',           config: 'DOUBLE_BYE_16',  dateRange: '20260309-20260316' },
+
+  // === MULTI-BYE FORMATS (13-14 Teams) ===
+  { id: '3',  name: 'A-10',          config: 'DOUBLE_BYE_14',  dateRange: '20260309-20260316' },
+  { id: '10', name: 'CAA',           config: 'DOUBLE_BYE_13',  dateRange: '20260304-20260316' },
+  { id: '62', name: 'American',      config: 'STEPLADDER_AMER',  dateRange: '20260309-20260316' },
 
   // === SINGLE BYE FORMATS (9-12 Teams) ===
-  { id: '17', name: 'MVC',           config: 'SINGLE_BYE_12',  dateRange: '20260303-20260317' },
-  { id: '4',  name: 'Big East',      config: 'SINGLE_BYE_11',  dateRange: '20260311-20260314' },
-  { id: '21', name: 'Mountain West', config: 'SINGLE_BYE_12',  dateRange: '20260309-20260317' },
-  { id: '31', name: 'Horizon',       config: 'SINGLE_BYE_11',  dateRange: '20260303-20260317' }, // <-- ADDED
-  { id: '5',  name: 'Big Sky',       config: 'SINGLE_BYE_10',  dateRange: '20260303-20260317' },
-  { id: '11', name: 'CUSA',          config: 'SINGLE_BYE_10',  dateRange: '20260303-20260317' },
-  { id: '22', name: 'Patriot',       config: 'SINGLE_BYE_10',  dateRange: '20260303-20260317' }, // <-- ADDED
-  { id: '24', name: 'SoCon',         config: 'SINGLE_BYE_10',  dateRange: '20260303-20260317' },
-  { id: '6',  name: 'Big South',     config: 'SINGLE_BYE_9',   dateRange: '20260303-20260317' }, // <-- ADDED
+  { id: '13', name: 'MAAC',          config: 'SINGLE_BYE_10',  dateRange: '20260304-20260316' }, 
+  { id: '5',  name: 'Big Sky',       config: 'SINGLE_BYE_10',  dateRange: '20260304-20260316' },
+  { id: '6',  name: 'Big South',     config: 'SINGLE_BYE_9',   dateRange: '20260304-20260316' },
+  { id: '11', name: 'CUSA',          config: 'SINGLE_BYE_10',  dateRange: '20260309-20260316' },
+  { id: '18', name: 'MVC',           config: 'SINGLE_BYE_11',  dateRange: '20260304-20260316' },
+  { id: '22', name: 'Patriot',       config: 'SINGLE_BYE_10',  dateRange: '20260303-20260316' },
+  { id: '24', name: 'SoCon',         config: 'SINGLE_BYE_10',  dateRange: '20260304-20260316' },
+  { id: '44', name: 'Mountain West', config: 'SINGLE_BYE_12',  dateRange: '20260309-20260316' },
+  { id: '45', name: 'Horizon',       config: 'HORIZON',        dateRange: '20260302-20260316' },
+  { id: '46', name: 'ASUN',          config: 'SINGLE_BYE_12',  dateRange: '20260304-20260316' },
+  { id: '49', name: 'Summit',        config: 'SINGLE_BYE_9',   dateRange: '20260304-20260316' },
 
   // === STRICT ELITE 8 FORMATS (8 Teams Qualify) ===
-  { id: '1',  name: 'America East',  config: 'ELITE_8',        dateRange: '20260303-20260317' }, // <-- ADDED
-  { id: '9',  name: 'Big West',      config: 'ELITE_8',        dateRange: '20260303-20260317' },
-  { id: '14', name: 'MAC',           config: 'ELITE_8',        dateRange: '20260303-20260317' },
-  { id: '15', name: 'ASUN',          config: 'ELITE_8',        dateRange: '20260303-20260317' },
-  { id: '16', name: 'MEAC',          config: 'ELITE_8',        dateRange: '20260303-20260317' },
-  { id: '18', name: 'MVC',           config: 'ELITE_8',        dateRange: '20260303-20260317' }, // <-- ADDED
-  { id: '26', name: 'SWAC',          config: 'ELITE_8',        dateRange: '20260303-20260317' },
-  { id: '28', name: 'Summit',        config: 'ELITE_8',        dateRange: '20260303-20260317' },
-  { id: '30', name: 'WAC',           config: 'ELITE_8',        dateRange: '20260303-20260317' },
+  { id: '1',  name: 'America East',  config: 'ELITE_8',        dateRange: '20260304-20260316' },
+  { id: '9',  name: 'Big West',      config: 'DOUBLE_BYE_8',   dateRange: '20260309-20260316' },
+  { id: '14', name: 'MAC',           config: 'ELITE_8',        dateRange: '20260312-20260316' },
+  { id: '16', name: 'MEAC',          config: 'SINGLE_BYE_7',   dateRange: '20260311-20260316' },
+  { id: '19', name: 'NEC',           config: 'ELITE_8',        dateRange: '20260304-20260316' },
+  { id: '26', name: 'SWAC',          config: 'DOUBLE_BYE_12',  dateRange: '20260309-20260316' },
+  { id: '30', name: 'WAC',           config: 'DOUBLE_BYE_7',   dateRange: '20260309-20260316' },
 
   // === FINAL 4 FORMAT (4 Teams Qualify) ===
-  { id: '12', name: 'Ivy League',    config: 'FINAL_4',        dateRange: '20260303-20260317' },
+  { id: '12', name: 'Ivy League',    config: 'FINAL_4',        dateRange: '20260314-20260316' },
 
   // === STEPLADDER FORMATS ===
-  { id: '29', name: 'WCC',           config: 'STEPLADDER_WCC', dateRange: '20260303-20260317' },
-  { id: '19', name: 'NEC',           config: 'STEPLADDER_WCC', dateRange: '20260303-20260317' },
-  { id: '25', name: 'Southland',     config: 'STEPLADDER_WCC', dateRange: '20260303-20260317' },
-  { id: '45', name: 'OVC',     config: 'STEPLADDER_WCC', dateRange: '20260303-20260317' },
+  { id: '20', name: 'OVC',           config: 'DOUBLE_BYE_8', dateRange: '20260304-20260316' },
+  { id: '25', name: 'Southland',     config: 'DOUBLE_BYE_8', dateRange: '20260304-20260316' },
+  { id: '29', name: 'WCC',           config: 'STEPLADDER_WCC', dateRange: '20260304-20260316' },
+  { id: '27', name: 'Sun Belt',      config: 'STEPLADDER_SBELT',  dateRange: '20260303-20260316' },
 ];
 
 // =============================================================================
