@@ -30,12 +30,38 @@ except FileNotFoundError:
     print("WARNING: seeds.json not found. Seeds will not display.")
 
 CONFERENCE_MAP = {
+    '1':  'America East',
     '2':  'ACC',
+    '3':  'A10',
     '4':  'Big East',
+    '5':  'WAC',
+    '6':  'Big South',
     '7':  'Big Ten',
     '8':  'Big 12',
-    '3':  'A10',
+    '10': 'CAA',
+    '11': 'CUSA',
+    '12': 'Ivy League',
+    '13': 'MAAC',
+    '14': 'MAC',
+    '15': 'Horizon',
+    '16': 'MEAC',
+    '18': 'MVC',
+    '19': 'NEC',
+    '20': 'OVC',
+    '21': 'Mountain West',
+    '22': 'Patriot',
     '23': 'SEC',
+    '24': 'SoCon',
+    '25': 'Southland',
+    '26': 'SWAC',
+    '27': 'Sun Belt',
+    '29': 'WCC',
+    '45': 'Horizon',
+    '46': 'ASUN',
+    '49': 'Summit',
+    '62': 'American',
+    
+    # Note: 35 and 36 are usually legacy/overflow duplicates in ESPN's backend
 }
 
 # =============================================================================
