@@ -552,9 +552,9 @@ export default function App() {
       }
       
       try {
-        const response = await fetch(
-          `http://localhost:8000/api/bracket/${activeTab.id}?date=${activeTab.dateRange}`
-        );
+        const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+        const response = await fetch(`${API_BASE_URL}/api/bracket/${activeTab.id}?date=${activeTab.dateRange}`);
+        
         if (!response.ok) throw new Error(`API returned ${response.status}`);
         const data = await response.json();
         
