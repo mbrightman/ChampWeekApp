@@ -27,7 +27,10 @@ app = FastAPI(title="Champ Week API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://champ-week-app.vercel.app/" # <-- Add your Vercel URL here!
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
