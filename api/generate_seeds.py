@@ -7,14 +7,43 @@ import os
 # --- CONFIGURATION ---
 YEAR = "2026"
 
-# Dictionary mapping our App's conference names to Wikipedia's URL formatting
+# Dictionary mapping our App's exact conference names to Wikipedia's URL formatting
+# Dictionary mapping ESPN's exact full conference names to Wikipedia's URL formatting
 CONFERENCES = {
-    "ACC": "ACC",
-    "Big East": "Big_East",
-    "Big Ten": "Big_Ten",
-    "SEC": "SEC",
-    "Big 12": "Big_12",
-    "A10": "Atlantic_10"
+    # The Majors
+    "Atlantic Coast Conference": "ACC",
+    "Big East Conference": "Big_East",
+    "Big Ten Conference": "Big_Ten",
+    "Big 12 Conference": "Big_12",
+    "Southeastern Conference": "SEC",
+
+    # Mid-Majors
+    "Atlantic 10 Conference": "Atlantic_10",
+    "American Conference": "American_Conference",
+    "Coastal Athletic Association": "CAA",
+    "Metro Conference": "MAAC", # ESPN maps the MAAC to "Metro Conference"
+    "Sun Belt Conference": "Sun_Belt_Conference",
+    "Big Sky Conference": "Big_Sky_Conference",
+    "Big South Conference": "Big_South_Conference",
+    "Conference USA": "Conference_USA",
+    "Horizon League": "Horizon_League",
+    "Mountain West Conference": "Mountain_West_Conference",
+    "Missouri Valley Conference": "Missouri_Valley_Conference",
+    "Patriot League": "Patriot_League",
+    "Southern Conference": "Southern_Conference",
+    "America East Conference": "America_East",
+    "Atlantic Sun Conference": "ASUN",
+    "Big West Conference": "Big_West_Conference",
+    "Ivy League": "Ivy_League",
+    "Mid-American Conference": "MAC",
+    "Mid-Eastern Athletic Conference": "MEAC",
+    "Northeast Conference": "Northeast_Conference",
+    "Summit League": "Summit_League",
+    "Southwestern Athletic Conference": "SWAC",
+    "United Athletic Conference": "WAC", # ESPN maps the WAC to "United Athletic Conference"
+    "Ohio Valley Conference": "Ohio_Valley_Conference",
+    "Southland Conference": "Southland_Conference",
+    "West Coast Conference": "West_Coast_Conference"
 }
 
 def generate_seeds():

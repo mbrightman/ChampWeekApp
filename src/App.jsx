@@ -49,7 +49,7 @@ const BRACKET_CONFIGS = {
   // 13 Teams (MAAC, CAA)
   DOUBLE_BYE_13: {
     rounds: [
-      { name: 'Round 1',       slots: 4, ghosts: [0, 1, 2] }, // Only 1 game played in Rd 1
+      { name: 'Round 1',       slots: 4, ghosts: [0, 2, 3] }, // Only 1 game played in Rd 1
       { name: 'Round 2',       slots: 4, ghosts: [] },
       { name: 'Quarterfinals', slots: 4, ghosts: [] },
       { name: 'Semifinals',    slots: 2, ghosts: [] },
@@ -87,7 +87,7 @@ const BRACKET_CONFIGS = {
   // 10 Teams (Big Sky, CUSA, SoCon, Patriot)
   SINGLE_BYE_10: {
     rounds: [
-      { name: 'Round 1',       slots: 4, ghosts: [0, 3] }, // Centers the 2 games
+      { name: 'Round 1',       slots: 4, ghosts: [1, 2] }, // Centers the 2 games
       { name: 'Quarterfinals', slots: 4, ghosts: []     },
       { name: 'Semifinals',    slots: 2, ghosts: []     },
       { name: 'Championship',  slots: 1, ghosts: []     },
@@ -105,7 +105,7 @@ const BRACKET_CONFIGS = {
   // Single Bye 7 Teams (MEAC)
   SINGLE_BYE_7: {
     rounds: [
-      { name: 'Round 1',       slots: 4, ghosts: [0] },
+      { name: 'Round 1',       slots: 4, ghosts: [1] },
       { name: 'Semifinals',    slots: 2, ghosts: [] },        // 2 Games
       { name: 'Championship',  slots: 1, ghosts: [] },        // 1 Game
     ],
@@ -169,9 +169,9 @@ const BRACKET_CONFIGS = {
   // Awkward Stepladder (American)
   STEPLADDER_AMER: {
     rounds: [
-      { name: 'Round 1',       slots: 4, ghosts: [0, 3] },
-      { name: 'Round 2',       slots: 4, ghosts: [0, 3] },    // 2 Games
-      { name: 'Round 3',       slots: 4, ghosts: [0, 3] },    // 2 Games
+      { name: 'Round 1',       slots: 4, ghosts: [1, 2] },
+      { name: 'Round 2',       slots: 4, ghosts: [1, 2] },    // 2 Games
+      { name: 'Round 3',       slots: 4, ghosts: [1, 2] },    // 2 Games
       { name: 'Semifinals',    slots: 2, ghosts: [] },        // 2 Games
       { name: 'Championship',  slots: 1, ghosts: [] },        // 1 Game
     ],
@@ -179,7 +179,7 @@ const BRACKET_CONFIGS = {
   // Absurd 11 (Horizon)
   HORIZON: {
     rounds: [
-      { name: 'Round 1',       slots: 4, ghosts: [1, 2, 3] },
+      { name: 'Round 1',       slots: 5, ghosts: [1, 2, 3, 4] },
       { name: 'Round 2',       slots: 5, ghosts: [] },    
       { name: 'Round 3',       slots: 4, ghosts: [0, 2, 3] },    // 2 Games
       { name: 'Semifinals',    slots: 2, ghosts: [] },        // 2 Games
@@ -236,9 +236,59 @@ const CONFERENCES = [
   { id: '27', name: 'Sun Belt',      config: 'STEPLADDER_SBELT',  dateRange: '20260303-20260316' },
 ];
 
+
 // =============================================================================
 // DATA TRANSFORMATION
 // =============================================================================
+const formatGameTime = (dateString) => {
+  if (!dateString) return "TBD";
+  const date = new Date(dateString);
+  
+  // Format as "Mar 10, 2:00 PM"
+  return date.toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit'
+  });
+};
+
+// Add any conference IDs here that shuffle their brackets after early rounds!
+const RESEEDING_CONFERENCES = ['1']; // '1' is America East
+
+const getBracketOrder = (game, isReseeder = false) => {
+  // Safely extract seeds (treat missing seeds as 99)
+  const s1 = parseInt(game.teams?.[0]?.seed) || 99;
+  const s2 = parseInt(game.teams?.[1]?.seed) || 99;
+
+  // Find the "favored" team (lowest numerical seed) anchoring this game
+  const bestSeed = Math.min(s1, s2);
+
+  // If both teams are TBD (99), send to the bottom of the pile
+  if (bestSeed === 99) return 99;
+
+  // 🚨 THE RESEEDER INTERCEPTOR 🚨
+  // If this conference re-seeds, we throw the static NCAA paths out the window.
+  // The highest remaining seed is the new king and MUST go to the top slot.
+  if (isReseeder) {
+    return bestSeed; // e.g., A 3-seed returns 3, beating a 4-seed (4) for the top slot!
+  }
+
+  // THE MASTER STATIC BRACKET PATHS
+  const verticalOrder = {
+    1: 1,  16: 1,  // Top-most path (feeds #1)
+    8: 2,  9: 2,   // Second path down (feeds #8)
+    5: 3,  12: 3,  // Third path down (feeds #5)
+    4: 4,  13: 4,  // Fourth path down (feeds #4)
+    6: 5,  11: 5,  // Fifth path down (feeds #6)
+    3: 6,  14: 6,  // Sixth path down (feeds #3)
+    7: 7,  10: 7,  // Seventh path down (feeds #7)
+    2: 8,  15: 8   // Bottom-most path (feeds #2)
+  };
+
+  return verticalOrder[bestSeed] || 99;
+};
+
 const buildBracketRounds = (games, conferenceId) => {
   if (!games || games.length === 0) return [];
 
@@ -248,8 +298,10 @@ const buildBracketRounds = (games, conferenceId) => {
   const config = BRACKET_CONFIGS[conf.config];
   if (!config) return [];
 
+  // 🚨 Determine if this specific conference requires the Reseeder Interceptor
+  const isReseeder = RESEEDING_CONFERENCES.includes(conferenceId);
+
   const sortedGames = [...games].sort((a, b) => new Date(a.date) - new Date(b.date));
-  
   let gamePointer = 0;
 
   return config.rounds.map((roundConfig) => {
@@ -258,6 +310,10 @@ const buildBracketRounds = (games, conferenceId) => {
     
     const gamesForRound = sortedGames.slice(gamePointer, gamePointer + expectedGames);
     gamePointer += expectedGames;
+
+    // VISUAL FIX: Sort games using the interceptor flag!
+    gamesForRound.sort((a, b) => getBracketOrder(a, isReseeder) - getBracketOrder(b, isReseeder));
+
 
     const displaySlots = [];
     let roundGamePointer = 0;
@@ -310,14 +366,21 @@ const TeamRow = ({ team, isGhost }) => {
       team.winner ? 'bg-slate-700 font-bold text-white' : 'bg-slate-800 text-slate-200'
     }`}>
       <div className="flex items-center space-x-3 overflow-hidden">
-        {/* Force font-normal on the seed so it doesn't inherit the winner's bold weight */}
-        <span className="text-xs text-slate-500 w-4 text-right shrink-0 font-normal">
-          {!isTBD && team.seed !== '-' ? team.seed : ''}
-        </span>
+        
+        {/* NEW SEED BADGE */}
+        {(!isTBD && team.seed !== '-') ? (
+          <span className="text-[10px] font-bold text-slate-400 bg-slate-900 rounded px-1.5 py-0.5 min-w-[20px] flex items-center justify-center shrink-0 shadow-inner">
+            {team.seed}
+          </span>
+        ) : (
+          <span className="w-5 shrink-0" /> // Keeps spacing aligned if there is no seed
+        )}
+
         <span className={`text-sm md:text-base truncate ${isTBD ? 'italic text-slate-500 font-normal' : ''}`}>
           {team.name}
         </span>
       </div>
+      
       <span className="text-sm md:text-base ml-2 shrink-0">
         {!isTBD && team.score !== '0' ? team.score : ''}
       </span>
@@ -355,7 +418,10 @@ const Matchup = ({ game }) => {
             )}
             {/* Shifted red to 500 and slate to 400 for better dark contrast */}
             <span className={game.isLive ? 'text-red-500' : 'text-slate-400'}>
-              {game.status}
+              {/* If game is scheduled but hasn't started, show the time. Otherwise, show status (like "Halftime" or "Final") */}
+              {(game.status === 'Scheduled' || game.status === 'TBD') && game.date
+                ? formatGameTime(game.date) 
+                : game.status}
             </span>
           </div>
 
@@ -372,6 +438,38 @@ const Matchup = ({ game }) => {
         {/* Darkened the divider line */}
         <div className="h-px w-full bg-slate-700" />
         <TeamRow team={game.bottomTeam} />
+      </div>
+    </div>
+  );
+};
+
+
+const ChampionCard = ({ team }) => {
+  if (!team) return null;
+
+  return (
+    <div className="flex-none w-[85vw] md:w-72 snap-center flex flex-col justify-center relative pl-4 md:pl-8">
+      <div className="bg-gradient-to-br from-slate-800 to-slate-900 border-2 border-yellow-500/50 rounded-xl shadow-[0_0_30px_rgba(234,179,8,0.15)] overflow-hidden flex flex-col w-full relative z-10 animate-fade-in-up">
+        
+        {/* Gold Header */}
+        <div className="bg-yellow-500/10 px-4 py-3 text-center border-b border-yellow-500/20">
+          <h3 className="text-yellow-500 font-black tracking-widest uppercase text-xs md:text-sm">
+            🏆 Tournament Champion
+          </h3>
+        </div>
+        
+        {/* Team Details */}
+        <div className="p-6 md:p-8 flex flex-col items-center justify-center space-y-2 text-center">
+          <span className="text-2xl md:text-3xl font-black text-white tracking-tight">
+            {team.name}
+          </span>
+          {team.seed !== '-' && (
+            <span className="text-slate-400 font-bold text-sm uppercase tracking-wider">
+              {team.seed} Seed
+            </span>
+          )}
+        </div>
+        
       </div>
     </div>
   );

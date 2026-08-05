@@ -1,5 +1,5 @@
 {
-    "ACC": {
+    "Atlantic Coast Conference": {
         "Duke": "1",
         "Virginia": "2",
         "Miami (FL)": "3",
@@ -16,8 +16,8 @@
         "Syracuse": "14",
         "Pittsburgh": "15"
     },
-    "Big East": {
-        "St. John's": "1",
+    "Big East Conference": {
+        "St Johns": "1",
         "UConn": "2",
         "Villanova": "3",
         "Seton Hall": "4",
@@ -29,7 +29,7 @@
         "Xavier": "10",
         "Georgetown": "11"
     },
-    "Big Ten": {
+    "Big Ten Conference": {
         "Michigan": "1",
         "Nebraska": "2",
         "Michigan State": "3",
@@ -49,13 +49,31 @@
         "Maryland": "17",
         "Penn State": "18"
     },
-    "SEC": {
+    "Big 12 Conference": {
+        "Arizona": "1",
+        "Houston": "2",
+        "Kansas": "3",
+        "Texas Tech": "4",
+        "Iowa State": "5",
+        "TCU": "6",
+        "West Virginia": "7",
+        "UCF": "8",
+        "Cincinnati": "9",
+        "BYU": "10",
+        "Colorado": "11",
+        "Arizona State": "12",
+        "Baylor": "13",
+        "Oklahoma State": "14",
+        "Kansas State": "15",
+        "Utah": "16"
+    },
+    "Southeastern Conference": {
         "Florida": "1",
         "Alabama": "2",
         "Arkansas": "3",
         "Vanderbilt": "4",
         "Tennessee": "5",
-        "Texas A&M": "6",
+        "Texas AM": "6",
         "Georgia": "7",
         "Missouri": "8",
         "Kentucky": "9",
@@ -67,28 +85,10 @@
         "Ole Miss": "15",
         "LSU": "16"
     },
-    "Big 12": {
-        "Arizona#\u2021": "1",
-        "Houston\u2021": "2",
-        "Kansas\u2021": "3",
-        "Texas Tech\u2021": "4",
-        "Iowa State\u2020": "5",
-        "TCU\u2020": "6",
-        "West Virginia\u2020": "7",
-        "UCF\u2020": "8",
-        "Cincinnati": "9",
-        "BYU": "10",
-        "Colorado": "11",
-        "Arizona State": "12",
-        "Baylor": "13",
-        "Oklahoma State": "14",
-        "Kansas State": "15",
-        "Utah": "16"
-    },
-    "A10": {
+    "Atlantic 10 Conference": {
         "Saint Louis": "1",
         "VCU": "2",
-        "Saint Joseph's": "3",
+        "Saint Josephs": "3",
         "Dayton": "4",
         "George Mason": "5",
         "Davidson": "6",
@@ -98,7 +98,298 @@
         "Rhode Island": "10",
         "Richmond": "11",
         "La Salle": "12",
-        "St. Bonaventure": "13",
+        "St Bonaventure": "13",
         "Loyola Chicago": "14"
+    },
+    "American Conference": {
+        "South Florida": "1",
+        "Wichita State": "2",
+        "Tulsa": "3",
+        "UAB": "4",
+        "Charlotte": "5",
+        "North Texas": "6",
+        "Florida Atlantic": "7",
+        "Memphis": "8",
+        "Tulane": "9",
+        "Temple": "10"
+    },
+    "Coastal Athletic Association": {
+        "UNC Wilmington": "1",
+        "Charleston": "2",
+        "Hofstra": "3",
+        "Monmouth": "4",
+        "Drexel": "5",
+        "William  Mary": "6",
+        "Towson": "7",
+        "Stony Brook": "8",
+        "Campbell": "9",
+        "Hampton": "10",
+        "Elon": "11",
+        "North Carolina AT": "12",
+        "Northeastern": "13"
+    },
+    "Metro Conference": {
+        "Merrimack": "1",
+        "Saint Peters": "2",
+        "Siena": "3",
+        "Quinnipiac": "4",
+        "Marist": "5",
+        "Mount St Marys": "6",
+        "Fairfield": "7",
+        "Iona": "8",
+        "Sacred Heart": "9",
+        "Manhattan": "10"
+    },
+    "Sun Belt Conference": {
+        "Troy": "1",
+        "Marshall": "2",
+        "Coastal Carolina": "3",
+        "Appalachian State": "4",
+        "Texas State": "5",
+        "South Alabama": "6",
+        "Arkansas State": "7",
+        "Southern Miss": "8",
+        "James Madison": "9",
+        "Georgia Southern": "10",
+        "Old Dominion": "11",
+        "Louisiana": "12",
+        "Georgia State": "13",
+        "LouisianaMonroe": "14"
+    },
+    "Big Sky Conference": {
+        "Portland State": "1",
+        "Montana State": "2",
+        "Eastern Washington": "3",
+        "Montana": "4",
+        "Northern Colorado": "5",
+        "Weber State": "6",
+        "Idaho": "7",
+        "Sacramento State": "8",
+        "Idaho State": "9",
+        "Northern Arizona": "10"
+    },
+    "Big South Conference": {
+        "High Point": "1",
+        "Winthrop": "2",
+        "Radford": "3",
+        "UNC Asheville": "4",
+        "Longwood": "5",
+        "Presbyterian": "6",
+        "Charleston Southern": "7",
+        "USC Upstate": "8",
+        "GardnerWebb": "9"
+    },
+    "Conference USA": {
+        "Liberty": "1",
+        "Sam Houston": "2",
+        "Western Kentucky": "3",
+        "Louisiana Tech": "4",
+        "Middle Tennessee": "5",
+        "Kennesaw State": "6",
+        "Jacksonville State": "7",
+        "FIU": "8",
+        "Missouri State": "9",
+        "New Mexico State": "10"
+    },
+    "Horizon League": {
+        "Wright State": "1",
+        "Robert Morris": "2",
+        "Detroit Mercy": "3",
+        "Oakland": "4",
+        "Green Bay": "5",
+        "Purdue Fort Wayne": "6",
+        "Northern Kentucky": "7",
+        "Milwaukee": "8",
+        "Youngstown State": "9",
+        "Cleveland State": "10",
+        "IU Indy": "11"
+    },
+    "Mountain West Conference": {
+        "Utah State": "1",
+        "San Diego State": "2",
+        "New Mexico": "3",
+        "Grand Canyon": "4",
+        "Nevada": "5",
+        "Boise State": "6",
+        "Colorado State": "7",
+        "UNLV": "8",
+        "Wyoming": "9",
+        "Fresno State": "10",
+        "San Jose State": "11",
+        "Air Force": "12"
+    },
+    "Missouri Valley Conference": {
+        "Belmont": "1",
+        "Bradley": "2",
+        "Illinois State": "3",
+        "Murray State": "4",
+        "UIC": "5",
+        "Northern Iowa": "6",
+        "Valparaiso": "7",
+        "Southern Illinois": "8",
+        "Drake": "9",
+        "Indiana State": "10",
+        "Evansville": "11"
+    },
+    "Patriot League": {
+        "Navy": "1",
+        "Lehigh": "2",
+        "Colgate": "3",
+        "Boston University": "4",
+        "American": "5",
+        "Loyola": "6",
+        "Lafayette": "7",
+        "Bucknell": "8",
+        "Army": "9",
+        "Holy Cross": "10"
+    },
+    "Southern Conference": {
+        "East Tennessee State": "1",
+        "Wofford": "2",
+        "Samford": "3",
+        "Mercer": "4",
+        "Western Carolina": "5",
+        "Furman": "6",
+        "UNC Greensboro": "7",
+        "Chattanooga": "8",
+        "The Citadel": "9",
+        "VMI": "10"
+    },
+    "America East Conference": {
+        "UMBC": "1",
+        "Vermont": "2",
+        "NJIT": "3",
+        "UMass Lowell": "4",
+        "Albany": "5",
+        "Maine": "6",
+        "Bryant": "7",
+        "New Hampshire": "8"
+    },
+    "Atlantic Sun Conference": {
+        "Central Arkansas": "1",
+        "Austin Peay": "2",
+        "Queens": "3",
+        "Lipscomb": "4",
+        "Florida Gulf Coast": "5",
+        "West Georgia": "6",
+        "Eastern Kentucky": "7",
+        "Bellarmine": "8",
+        "Jacksonville": "9",
+        "Stetson": "10",
+        "North Florida": "11",
+        "North Alabama": "12"
+    },
+    "Big West Conference": {
+        "UC Irvine": "1",
+        "Hawaii": "2",
+        "Cal State Fullerton": "3",
+        "Cal State Northridge": "4",
+        "UC San Diego": "5",
+        "UC Davis": "6",
+        "UC Santa Barbara": "7",
+        "Cal Poly": "8"
+    },
+    "Ivy League": {
+        "Yale": "1",
+        "Harvard": "2",
+        "Penn": "3",
+        "Cornell": "4"
+    },
+    "Mid-American Conference": {
+        "Miami (OH)": "1",
+        "Akron": "2",
+        "Kent State": "3",
+        "Toledo": "4",
+        "Bowling Green": "5",
+        "Ohio": "6",
+        "Buffalo": "7",
+        "UMass": "8"
+    },
+    "Mid-Eastern Athletic Conference": {
+        "Howard": "1",
+        "Morgan State": "2",
+        "North Carolina Central": "3",
+        "Norfolk State": "4",
+        "South Carolina State": "5",
+        "Maryland Eastern Shore": "6",
+        "Delaware State": "7"
+    },
+    "Northeast Conference": {
+        "LIU": "1",
+        "Central Connecticut": "2",
+        "Mercyhurst": "3",
+        "Le Moyne": "4",
+        "Stonehill": "5",
+        "Fairleigh Dickinson": "6",
+        "Wagner": "7",
+        "Chicago State": "8"
+    },
+    "Summit League": {
+        "North Dakota State": "1",
+        "St Thomas": "2",
+        "North Dakota": "3",
+        "South Dakota": "4",
+        "Omaha": "5",
+        "Denver": "6",
+        "South Dakota State": "7",
+        "Oral Roberts": "8",
+        "Kansas City": "9"
+    },
+    "Southwestern Athletic Conference": {
+        "BethuneCookman": "1",
+        "Florida AM": "2",
+        "Southern": "3",
+        "Texas Southern": "4",
+        "Alabama AM": "5",
+        "ArkansasPine Bluff": "6",
+        "Jackson State": "7",
+        "Prairie View AM": "8",
+        "Grambling State": "9",
+        "Alabama State": "10",
+        "Alcorn State": "11",
+        "Mississippi Valley State": "12"
+    },
+    "United Athletic Conference": {
+        "Utah Valley": "1",
+        "California Baptist": "2",
+        "Utah Tech": "3",
+        "UT Arlington": "4",
+        "Southern Utah": "5",
+        "Abilene Christian": "6",
+        "Tarleton": "7"
+    },
+    "Ohio Valley Conference": {
+        "Tennessee State": "1",
+        "Morehead State": "2",
+        "Southeast Missouri State": "3",
+        "UT Martin": "4",
+        "SIU Edwardsville": "5",
+        "Lindenwood": "6",
+        "Little Rock": "7",
+        "Eastern Illinois": "8"
+    },
+    "Southland Conference": {
+        "Stephen F Austin": "1",
+        "McNeese": "2",
+        "UT Rio Grande Valley": "3",
+        "Texas AMCorpus Christi": "4",
+        "New Orleans": "5",
+        "Nicholls": "6",
+        "Northwestern State": "7",
+        "Houston Christian": "8"
+    },
+    "West Coast Conference": {
+        "Gonzaga": "1",
+        "Saint Marys": "2",
+        "Santa Clara": "3",
+        "Oregon State": "4",
+        "San Francisco": "5",
+        "Pacific": "6",
+        "Seattle": "7",
+        "Washington State": "8",
+        "Portland": "9",
+        "Loyola Marymount": "10",
+        "San Diego": "11",
+        "Pepperdine": "12"
     }
 }

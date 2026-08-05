@@ -80,7 +80,13 @@ OVERRIDES = {
     "FSU": "Florida State",
     "NC State": "NC State", 
     "UConn": "UConn",
-    "Ole Miss": "Mississippi"
+    "Ole Miss": "Mississippi",
+    "San José St": "San Jose State",
+    "Long Island": "LIU",
+    "Grambling": "Grambling State",
+    "UL Monroe": "LouisianaMonroe",
+    "App State": "Appalachian State",
+    "SC Upstate": "USC Upstate"
 }
 
 def get_true_seed(team_name: str, conf_seeds: dict) -> str:
@@ -92,10 +98,11 @@ def get_true_seed(team_name: str, conf_seeds: dict) -> str:
         return conf_seeds[team_name]
 
     # 2. Check the Manual Override Dictionary
+    search_name = team_name  # <-- Default to the ESPN name
     if team_name in OVERRIDES:
-        wiki_alias = OVERRIDES[team_name]
-        if wiki_alias in conf_seeds:
-            return conf_seeds[wiki_alias]
+        search_name = OVERRIDES[team_name] # <-- Upgrade to the Wiki alias
+        if search_name in conf_seeds:
+            return conf_seeds[search_name]
 
     # --- THE SCRUBBER ---
     def clean_string(s: str) -> str:
@@ -104,9 +111,9 @@ def get_true_seed(team_name: str, conf_seeds: dict) -> str:
         s = s.replace(" state", " st")
         return s.strip()
 
-    norm_team = clean_string(team_name)
+    # 3. Normalized Exact Match (Using the upgraded search_name!)
+    norm_team = clean_string(search_name)
     
-    # 3. Normalized Exact Match
     for wiki_name, seed in conf_seeds.items():
         norm_wiki = clean_string(wiki_name)
         if norm_team == norm_wiki:
