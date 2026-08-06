@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 
 // =============================================================================
@@ -192,48 +192,44 @@ const BRACKET_CONFIGS = {
 // CONFERENCE DEFINITIONS (ALL 31 DIVISION I CONFERENCES)
 // =============================================================================
 const CONFERENCES = [
-  // === MAJOR CONFERENCES (Dates: 20260309-20260316) ===
-  { id: '2',  name: 'ACC',           config: 'DOUBLE_BYE_15',  dateRange: '20260309-20260316' },
-  { id: '4',  name: 'Big East',      config: 'SINGLE_BYE_11',  dateRange: '20260309-20260316' },
-  { id: '7',  name: 'Big Ten',       config: 'TRIPLE_BYE_18',  dateRange: '20260309-20260316' },
-  { id: '8',  name: 'Big 12',        config: 'DOUBLE_BYE_16',  dateRange: '20260309-20260316' },
-  { id: '23', name: 'SEC',           config: 'DOUBLE_BYE_16',  dateRange: '20260309-20260316' },
-
-  // === MULTI-BYE FORMATS (13-14 Teams) ===
-  { id: '3',  name: 'A-10',          config: 'DOUBLE_BYE_14',  dateRange: '20260309-20260316' },
-  { id: '10', name: 'CAA',           config: 'DOUBLE_BYE_13',  dateRange: '20260304-20260316' },
-  { id: '62', name: 'American',      config: 'STEPLADDER_AMER',  dateRange: '20260309-20260316' },
-
-  // === SINGLE BYE FORMATS (9-12 Teams) ===
-  { id: '13', name: 'MAAC',          config: 'SINGLE_BYE_10',  dateRange: '20260304-20260316' }, 
-  { id: '5',  name: 'Big Sky',       config: 'SINGLE_BYE_10',  dateRange: '20260304-20260316' },
-  { id: '6',  name: 'Big South',     config: 'SINGLE_BYE_9',   dateRange: '20260304-20260316' },
-  { id: '11', name: 'CUSA',          config: 'SINGLE_BYE_10',  dateRange: '20260309-20260316' },
-  { id: '18', name: 'MVC',           config: 'SINGLE_BYE_11',  dateRange: '20260304-20260316' },
-  { id: '22', name: 'Patriot',       config: 'SINGLE_BYE_10',  dateRange: '20260303-20260316' },
-  { id: '24', name: 'SoCon',         config: 'SINGLE_BYE_10',  dateRange: '20260304-20260316' },
-  { id: '44', name: 'Mountain West', config: 'SINGLE_BYE_12',  dateRange: '20260309-20260316' },
-  { id: '45', name: 'Horizon',       config: 'HORIZON',        dateRange: '20260302-20260316' },
-  { id: '46', name: 'ASUN',          config: 'SINGLE_BYE_12',  dateRange: '20260304-20260316' },
-  { id: '49', name: 'Summit',        config: 'SINGLE_BYE_9',   dateRange: '20260304-20260316' },
-
-  // === STRICT ELITE 8 FORMATS (8 Teams Qualify) ===
-  { id: '1',  name: 'America East',  config: 'ELITE_8',        dateRange: '20260304-20260316' },
-  { id: '9',  name: 'Big West',      config: 'DOUBLE_BYE_8',   dateRange: '20260309-20260316' },
-  { id: '14', name: 'MAC',           config: 'ELITE_8',        dateRange: '20260312-20260316' },
-  { id: '16', name: 'MEAC',          config: 'SINGLE_BYE_7',   dateRange: '20260311-20260316' },
-  { id: '19', name: 'NEC',           config: 'ELITE_8',        dateRange: '20260304-20260316' },
-  { id: '26', name: 'SWAC',          config: 'DOUBLE_BYE_12',  dateRange: '20260309-20260316' },
-  { id: '30', name: 'WAC',           config: 'DOUBLE_BYE_7',   dateRange: '20260309-20260316' },
-
-  // === FINAL 4 FORMAT (4 Teams Qualify) ===
-  { id: '12', name: 'Ivy League',    config: 'FINAL_4',        dateRange: '20260314-20260316' },
-
-  // === STEPLADDER FORMATS ===
-  { id: '20', name: 'OVC',           config: 'DOUBLE_BYE_8', dateRange: '20260304-20260316' },
-  { id: '25', name: 'Southland',     config: 'DOUBLE_BYE_8', dateRange: '20260304-20260316' },
-  { id: '29', name: 'WCC',           config: 'STEPLADDER_WCC', dateRange: '20260304-20260316' },
-  { id: '27', name: 'Sun Belt',      config: 'STEPLADDER_SBELT',  dateRange: '20260303-20260316' },
+  // === MAJOR CONFERENCES ===
+  { id: '2',  name: 'ACC', shortName: 'ACC',          config: 'DOUBLE_BYE_15',  dateRange: '20260309-20260316' },
+  { id: '4',  name: 'Big East', shortName: 'BIG EAST',      config: 'SINGLE_BYE_11',  dateRange: '20260309-20260316' },
+  { id: '7',  name: 'Big Ten', shortName: 'B10',       config: 'TRIPLE_BYE_18',  dateRange: '20260309-20260316' },
+  { id: '8',  name: 'Big 12', shortName: 'B12',        config: 'DOUBLE_BYE_16',  dateRange: '20260309-20260316' },
+  { id: '23', name: 'SEC', shortName: 'SEC',           config: 'DOUBLE_BYE_16',  dateRange: '20260309-20260316' },
+  
+  // === HIGH-MID MAJOR CONFERENCES ===
+  { id: '3',  name: 'A-10', shortName: 'A-10',          config: 'DOUBLE_BYE_14',  dateRange: '20260309-20260316' },
+  { id: '62', name: 'American', shortName: 'AAC',      config: 'STEPLADDER_AMER',  dateRange: '20260309-20260316' },
+  { id: '44', name: 'Mountain West', shortName: 'MWC', config: 'SINGLE_BYE_12',  dateRange: '20260309-20260316' },
+  { id: '29', name: 'WCC', shortName: 'WCC',           config: 'STEPLADDER_WCC', dateRange: '20260304-20260316' },
+  
+  // === MID MAJOR CONFERENCES ===
+  { id: '11', name: 'CUSA', shortName: 'CUSA',          config: 'SINGLE_BYE_10',  dateRange: '20260309-20260316' },
+  { id: '12', name: 'Ivy League', shortName: 'IVY',    config: 'FINAL_4',        dateRange: '20260314-20260316' },
+  { id: '14', name: 'MAC', shortName: 'MAC',           config: 'ELITE_8',        dateRange: '20260312-20260316' },
+  { id: '18', name: 'MVC', shortName: 'MVC',           config: 'SINGLE_BYE_11',  dateRange: '20260304-20260316' },
+  { id: '27', name: 'Sun Belt', shortName: 'SUN BELT',      config: 'STEPLADDER_SBELT',  dateRange: '20260303-20260316' },
+  { id: '30', name: 'WAC', shortName: 'WAC',           config: 'DOUBLE_BYE_7',   dateRange: '20260309-20260316' },
+  
+  // === LOW MAJOR CONFERENCES ===
+  { id: '1',  name: 'America East', shortName: 'AM EAST',  config: 'ELITE_8',        dateRange: '20260304-20260316' },
+  { id: '46', name: 'ASUN', shortName: 'ASUN',          config: 'SINGLE_BYE_12',  dateRange: '20260304-20260316' },
+  { id: '5',  name: 'Big Sky', shortName: 'BIG SKY',       config: 'SINGLE_BYE_10',  dateRange: '20260304-20260316' },
+  { id: '6',  name: 'Big South', shortName: 'BIG SOUTH',     config: 'SINGLE_BYE_9',   dateRange: '20260304-20260316' },
+  { id: '9',  name: 'Big West', shortName: 'BIG WEST',      config: 'DOUBLE_BYE_8',   dateRange: '20260309-20260316' },
+  { id: '10', name: 'CAA', shortName: 'CAA',           config: 'DOUBLE_BYE_13',  dateRange: '20260304-20260316' },
+  { id: '45', name: 'Horizon', shortName: 'HORIZ',       config: 'HORIZON',        dateRange: '20260302-20260316' },
+  { id: '13', name: 'MAAC', shortName: 'MAAC',          config: 'SINGLE_BYE_10',  dateRange: '20260304-20260316' }, 
+  { id: '16', name: 'MEAC', shortName: 'MEAC',          config: 'SINGLE_BYE_7',   dateRange: '20260311-20260316' },
+  { id: '19', name: 'NEC', shortName: 'NEC',           config: 'ELITE_8',        dateRange: '20260304-20260316' },
+  { id: '20', name: 'OVC', shortName: 'OVC',           config: 'DOUBLE_BYE_8', dateRange: '20260304-20260316' },
+  { id: '22', name: 'Patriot', shortName: 'PATRIOT',       config: 'SINGLE_BYE_10',  dateRange: '20260303-20260316' },
+  { id: '24', name: 'SoCon', shortName: 'SOCON',         config: 'SINGLE_BYE_10',  dateRange: '20260304-20260316' },
+  { id: '25', name: 'Southland', shortName: 'SOUTH',     config: 'DOUBLE_BYE_8', dateRange: '20260304-20260316' },
+  { id: '26', name: 'SWAC', shortName: 'SWAC',          config: 'DOUBLE_BYE_12',  dateRange: '20260309-20260316' },
+  { id: '49', name: 'Summit', shortName: 'SUMMIT',        config: 'SINGLE_BYE_9',   dateRange: '20260304-20260316' },
 ];
 
 
@@ -544,6 +540,35 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // 1. Create a reference to the scrolling container
+  const scrollContainerRef = useRef(null);
+
+  // 2. Watch for activeTab changes and auto-scroll
+  useEffect(() => {
+    if (scrollContainerRef.current) {
+      const container = scrollContainerRef.current;
+      const activeElement = document.getElementById(`tab-${activeTab.id}`);
+      
+      if (activeElement) {
+        // Grab the exact on-screen dimensions of the container and the target button
+        const containerRect = container.getBoundingClientRect();
+        const elementRect = activeElement.getBoundingClientRect();
+        
+        // Find exactly where the button is currently sitting relative to the container's left edge
+        const relativeLeft = elementRect.left - containerRect.left;
+        
+        // Calculate the exact pixel shift needed to perfectly center it
+        const scrollAdjustment = relativeLeft - (containerRect.width / 2) + (elementRect.width / 2);
+        
+        // Apply the shift!
+        container.scrollTo({
+          left: container.scrollLeft + scrollAdjustment,
+          behavior: 'smooth'
+        });
+      }
+    }
+  }, [activeTab]);
+
   useEffect(() => {
     const fetchTournamentData = async (isBackground = false) => {
       if (!isBackground) {
@@ -589,20 +614,60 @@ export default function App() {
       <header className="bg-slate-950 text-white px-0 pt-4 pb-2 shadow-md z-10 shrink-0 border-b border-slate-800">
         <h1 className="text-xl font-black tracking-tight mb-4 px-6">CHAMP WEEK CENTRAL</h1>
 
-        <div className="flex space-x-6 overflow-x-auto no-scrollbar px-6 mb-2">
-          {CONFERENCES.map((conf) => (
-            <button
-              key={conf.id}
-              onClick={() => setActiveTab(conf)}
-              className={`pb-2 text-sm font-bold whitespace-nowrap transition-colors ${
-                activeTab.id === conf.id
-                  ? 'text-blue-400 border-b-2 border-blue-400'
-                  : 'text-slate-400 hover:text-slate-200'
-              }`}
+        {/* NAVIGATION ROW (Dropdown + Tabs) */}
+        <div className="flex items-center px-4 mb-2 space-x-4">
+          
+          {/* 1. THE QUICK-JUMP DROPDOWN */}
+          <div className="shrink-0 relative">
+            <select 
+              /* SHRUNK TO w-24 (96px) */
+              className="appearance-none w-24 md:w-auto truncate bg-slate-900 border border-slate-700 text-slate-200 font-bold py-1 pl-2 pr-6 rounded shadow-sm focus:outline-none focus:ring-1 focus:ring-blue-500 cursor-pointer text-xs md:text-sm hover:bg-slate-800 transition-colors"
+              value={activeTab.id}
+              onChange={(e) => {
+                const selected = CONFERENCES.find(c => c.id === e.target.value);
+                if (selected) setActiveTab(selected);
+              }}
             >
-              {conf.name}
-            </button>
-          ))}
+              <option value="" disabled>Select...</option>
+              {CONFERENCES.map(conf => (
+                <option key={conf.id} value={conf.id}>
+                  {/* PULLS THE NEW SHORT NAME */}
+                  {conf.shortName || conf.name} 
+                </option>
+              ))}
+            </select>
+            
+            {/* Custom Dropdown Arrow */}
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-1.5 text-slate-400">
+              <svg className="fill-current h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+              </svg>
+            </div>
+          </div>
+
+          {/* 2. VERTICAL DIVIDER */}
+          <div className="w-px h-6 bg-slate-700 shrink-0" />
+
+          {/* 3. HORIZONTAL SCROLLING TABS */}
+          <div 
+            ref={scrollContainerRef}
+            className="flex space-x-6 overflow-x-auto no-scrollbar pb-1">
+            {CONFERENCES.map((conf) => (
+              <button
+                key={conf.id}
+                id={`tab-${conf.id}`}
+                onClick={() => setActiveTab(conf)}
+                className={`text-sm font-bold whitespace-nowrap transition-colors border-b-2 ${
+                  activeTab.id === conf.id
+                    ? 'text-blue-400 border-blue-400'
+                    : 'text-slate-400 border-transparent hover:text-slate-200'
+                }`}
+              >
+                {conf.name}
+              </button>
+            ))}
+          </div>
+
         </div>
       </header>
 
